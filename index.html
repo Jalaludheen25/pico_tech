@@ -170,9 +170,7 @@
     .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 998; }
     .nav-overlay.open { display: block; }
 
-    /* Cookie banner */
-    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--darkColor); color: #fff; padding: 1rem 2rem; z-index: 9999; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; transform: translateY(100%); transition: transform 0.5s; }
-    #cookie-banner.show { transform: translateY(0); }
+
 
     /* Loader */
     #page-loader { position: fixed; inset: 0; background: var(--darkColor); z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; transition: opacity 0.5s; }
@@ -196,14 +194,7 @@
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
 
-<!-- Cookie Banner -->
-<div id="cookie-banner">
-  <p style="font-size:0.85rem;color:#ccc;flex:1">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <span style="color:var(--cta-background-color);cursor:pointer" onclick="showPage('privacy')">Learn more</span></p>
-  <div style="display:flex;gap:0.75rem">
-    <button class="btn-outline" style="padding:0.5rem 1.25rem;font-size:0.78rem" onclick="closeCookie()">Decline</button>
-    <button class="btn-primary" style="padding:0.5rem 1.25rem;font-size:0.78rem" onclick="closeCookie()">Accept All</button>
-  </div>
-</div>
+
 
 <!-- Utility Bar -->
 <div class="utility-bar py-1.5 px-4">
@@ -230,10 +221,7 @@
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
     <!-- Logo -->
     <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home')">
-      <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;">
-        <i class="fas fa-atom text-white text-sm"></i>
-      </div>
-      <span class="nav-logo text-2xl font-black text-white" style="font-family:'Outfit',sans-serif;letter-spacing:-0.02em">Pico<span>Tech</span></span>
+      <img src="assets/images/logo.png" alt="PicoTech Logo" style="height:36px;width:auto;border-radius:8px;">
     </div>
 
     <!-- Desktop Nav -->
@@ -357,11 +345,8 @@
           <div style="width:500px;height:500px;background:linear-gradient(135deg,rgba(154,31,143,0.2),rgba(110,43,98,0.3));border-radius:30px;border:1px solid rgba(165,24,144,0.3);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
             <!-- Animated device mockup -->
             <div style="text-align:center">
-              <div style="width:160px;height:200px;background:linear-gradient(180deg,#2a2a35,#1a1a22);border-radius:20px;margin:0 auto;border:1px solid rgba(165,24,144,0.4);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(165,24,144,0.3)">
-                <i class="fas fa-atom text-5xl mb-3" style="color:var(--cta-background-color);animation:pulse-glow 2s infinite"></i>
-                <div style="width:80px;height:4px;background:linear-gradient(90deg,transparent,var(--cta-background-color),transparent);border-radius:2px;margin-bottom:1rem"></div>
-                <div style="color:#fff;font-family:'Outfit',sans-serif;font-weight:900;font-size:1.1rem">PICO<span style="color:var(--cta-background-color)">WAY</span></div>
-                <div style="color:#888;font-size:0.65rem;letter-spacing:0.1em">ELITE</div>
+              <div style="width:260px;height:300px;border-radius:20px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(165,24,144,0.3);overflow:hidden">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=500&fit=crop" alt="Medical Aesthetic Device" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.85) contrast(1.1)">
               </div>
               <!-- Energy rings -->
               <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:350px;height:350px;border-radius:50%;border:1px solid rgba(165,24,144,0.15);animation:pulse-glow 3s infinite"></div>
@@ -413,11 +398,12 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- GentlePro -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')">
-          <div class="product-card-img">
-            <div style="text-align:center">
-              <i class="fas fa-bolt" style="font-size:3rem;color:var(--cta-background-color);opacity:0.8;display:block;margin-bottom:0.75rem"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">GentlePro™</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">ALEXANDRITE / ND:YAG</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.7));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">GentlePro™</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">ALEXANDRITE / ND:YAG</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -435,11 +421,12 @@
 
         <!-- PicoWay -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.1s">
-          <div class="product-card-img" style="background:linear-gradient(135deg,#1a0618,#2a1030)">
-            <div style="text-align:center">
-              <i class="fas fa-atom" style="font-size:3rem;color:var(--cta-background-color);opacity:0.8;display:block;margin-bottom:0.75rem;animation:pulse-glow 2s infinite"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">PicoWay®</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">PICOSECOND LASER</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,6,24,0.2),rgba(42,16,48,0.85));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">PicoWay®</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">PICOSECOND LASER</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -457,11 +444,12 @@
 
         <!-- Nordlys -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.2s">
-          <div class="product-card-img" style="background:linear-gradient(135deg,#0a1a25,#1a3040)">
-            <div style="text-align:center">
-              <i class="fas fa-sun" style="font-size:3rem;color:#f0a;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Nordlys™</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">ELLIPSE IPL / ND:YAG / FRAX</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,26,37,0.2),rgba(26,48,64,0.85));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Nordlys™</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">ELLIPSE IPL / ND:YAG / FRAX</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -479,11 +467,12 @@
 
         <!-- Matrix -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')">
-          <div class="product-card-img" style="background:linear-gradient(135deg,#1a1505,#2a2010)">
-            <div style="text-align:center">
-              <i class="fas fa-microchip" style="font-size:3rem;color:#fa0;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Matrix™</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">RF MICRONEEDLING</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,21,5,0.2),rgba(42,32,16,0.85));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Matrix™</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">RF MICRONEEDLING</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -501,11 +490,12 @@
 
         <!-- Vbeam -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.1s">
-          <div class="product-card-img" style="background:linear-gradient(135deg,#1a0505,#2a1010)">
-            <div style="text-align:center">
-              <i class="fas fa-heartbeat" style="font-size:3rem;color:#f44;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Vbeam®</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">PULSED DYE LASER</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,5,5,0.2),rgba(42,16,16,0.85));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Vbeam®</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">PULSED DYE LASER</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -523,11 +513,12 @@
 
         <!-- Glace -->
         <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.2s">
-          <div class="product-card-img" style="background:linear-gradient(135deg,#051520,#0a2030)">
-            <div style="text-align:center">
-              <i class="fas fa-spa" style="font-size:3rem;color:#0cf;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
-              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Glacē™</div>
-              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">MULTI-STEP FACIAL</div>
+          <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&h=300&fit=crop') center/cover no-repeat;position:relative">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,21,32,0.2),rgba(10,32,48,0.85));display:flex;align-items:flex-end;padding:1.25rem">
+              <div>
+                <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Glacē™</div>
+                <div style="color:#ccc;font-size:0.75rem;letter-spacing:0.1em">MULTI-STEP FACIAL</div>
+              </div>
             </div>
           </div>
           <div class="p-5">
@@ -863,11 +854,12 @@
 
       <!-- Product Detail Card - GentlePro -->
       <div class="product-card" data-cat="laser">
-        <div class="product-card-img">
-          <div style="text-align:center">
-            <i class="fas fa-bolt" style="font-size:4rem;color:var(--cta-background-color);opacity:0.9;display:block;margin-bottom:1rem"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">GentlePro™</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ALEXANDRITE / ND:YAG LASER</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.75));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">GentlePro™</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ALEXANDRITE / ND:YAG LASER</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -894,11 +886,12 @@
 
       <!-- PicoWay -->
       <div class="product-card" data-cat="laser">
-        <div class="product-card-img" style="background:linear-gradient(135deg,#1a0618,#2a1030)">
-          <div style="text-align:center">
-            <i class="fas fa-atom" style="font-size:4rem;color:var(--cta-background-color);opacity:0.9;display:block;margin-bottom:1rem;animation:pulse-glow 2s infinite"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">PicoWay®</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PICOSECOND LASER SYSTEM</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,6,24,0.2),rgba(42,16,48,0.85));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">PicoWay®</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PICOSECOND LASER SYSTEM</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -925,11 +918,12 @@
 
       <!-- Nordlys -->
       <div class="product-card" data-cat="ipl">
-        <div class="product-card-img" style="background:linear-gradient(135deg,#0a1a25,#1a3040)">
-          <div style="text-align:center">
-            <i class="fas fa-sun" style="font-size:4rem;color:#e0a0ff;opacity:0.9;display:block;margin-bottom:1rem"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Nordlys™</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ELLIPSE IPL / ND:YAG / FRAX</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,26,37,0.2),rgba(26,48,64,0.85));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Nordlys™</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ELLIPSE IPL / ND:YAG / FRAX</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -956,11 +950,12 @@
 
       <!-- Matrix -->
       <div class="product-card" data-cat="rf">
-        <div class="product-card-img" style="background:linear-gradient(135deg,#1a1505,#2a2010)">
-          <div style="text-align:center">
-            <i class="fas fa-microchip" style="font-size:4rem;color:#ffa500;opacity:0.9;display:block;margin-bottom:1rem"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Matrix™</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">RF MICRONEEDLING</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,21,5,0.2),rgba(42,32,16,0.85));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Matrix™</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">RF MICRONEEDLING</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -987,11 +982,12 @@
 
       <!-- Vbeam -->
       <div class="product-card" data-cat="laser">
-        <div class="product-card-img" style="background:linear-gradient(135deg,#1a0505,#2a1010)">
-          <div style="text-align:center">
-            <i class="fas fa-heartbeat" style="font-size:4rem;color:#ff6666;opacity:0.9;display:block;margin-bottom:1rem"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Vbeam®</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PULSED DYE LASER</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,5,5,0.2),rgba(42,16,16,0.85));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Vbeam®</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PULSED DYE LASER</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -1018,11 +1014,12 @@
 
       <!-- Glace -->
       <div class="product-card" data-cat="facial">
-        <div class="product-card-img" style="background:linear-gradient(135deg,#051520,#0a2030)">
-          <div style="text-align:center">
-            <i class="fas fa-spa" style="font-size:4rem;color:#00ccff;opacity:0.9;display:block;margin-bottom:1rem"></i>
-            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Glacē™</div>
-            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">MULTI-STEP FACIAL SYSTEM</div>
+        <div class="product-card-img" style="background:url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=350&fit=crop') center/cover no-repeat;position:relative">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,21,32,0.2),rgba(10,32,48,0.85));display:flex;align-items:flex-end;padding:1.5rem">
+            <div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Glacē™</div>
+              <div style="color:#ccc;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">MULTI-STEP FACIAL SYSTEM</div>
+            </div>
           </div>
         </div>
         <div class="p-6">
@@ -1769,8 +1766,7 @@
       <!-- Brand -->
       <div class="lg:col-span-2">
         <div class="flex items-center gap-3 mb-4 cursor-pointer" onclick="showPage('home')">
-          <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-atom text-white text-sm"></i></div>
-          <span style="font-family:'Outfit',sans-serif;font-weight:900;font-size:1.5rem;color:#fff">Pico<span style="color:var(--cta-background-color)">Tech</span></span>
+          <img src="assets/images/logo.png" alt="PicoTech Logo" style="height:36px;width:auto;border-radius:8px;">
         </div>
         <p style="font-size:0.85rem;line-height:1.7;margin-bottom:1.5rem">PicoTech delivers cutting-edge medical aesthetic technology to clinics and practitioners across the UAE and Middle East. Dubai Healthcare City based. DHA Licensed.</p>
         <div class="flex gap-3">
@@ -1835,7 +1831,7 @@
 </footer>
 
 <!-- Floating WhatsApp -->
-<a href="https://wa.me/971507480783" target="_blank" style="position:fixed;bottom:2rem;right:2rem;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 6px 20px rgba(37,211,102,0.4);z-index:9997;transition:all 0.3s" class="hover:scale-110">
+<a href="https://wa.me/971507480783" target="_blank" style="position:fixed;bottom:2rem;right:2rem;background:var(--cta-background-color);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 6px 20px rgba(165,24,144,0.4);z-index:9997;transition:all 0.3s" class="hover:scale-110">
   <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -1911,14 +1907,7 @@
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   }
 
-  // Cookie banner
-  setTimeout(() => {
-    document.getElementById('cookie-banner').classList.add('show');
-  }, 2000);
 
-  function closeCookie() {
-    document.getElementById('cookie-banner').classList.remove('show');
-  }
 
   // Page loader
   window.addEventListener('load', () => {
