@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PicoTech | Medical Aesthetic Solutions – Dubai, UAE</title>
+  <meta name="description" content="PicoTech delivers cutting-edge medical aesthetic laser and energy-based devices in the UAE. Explore our advanced technology for hair removal, tattoo removal, skin tightening and more."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --purpleColor: #9a1f8f;
+      --darkpurpleColor: #6E2B62;
+      --darkColor: #1b1c21;
+      --cta-background-color: #a51890;
+      --bodytextColor: #1b1c21;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: #fff; color: var(--bodytextColor); overflow-x: hidden; }
+    h1,h2,h3,h4,h5 { font-family: 'Outfit', sans-serif; }
+
+    /* Utility Bar */
+    .utility-bar { background: var(--darkpurpleColor); }
+
+    /* Navigation */
+    .main-nav { background: var(--darkColor); position: sticky; top: 0; z-index: 1000; }
+    .nav-logo span { color: var(--cta-background-color); }
+    .nav-link { color: #ccc; transition: color 0.3s; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; padding: 0.5rem 0.75rem; border-radius: 4px; }
+    .nav-link:hover { color: #fff; background: rgba(165,24,144,0.15); }
+    .nav-link.active { color: var(--cta-background-color); }
+
+    /* Dropdown */
+    .dropdown { position: relative; }
+    .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: var(--darkColor); min-width: 220px; border-top: 2px solid var(--cta-background-color); box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 999; }
+    .dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-item { display: block; padding: 0.65rem 1.25rem; color: #ccc; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; transition: all 0.2s; cursor: pointer; }
+    .dropdown-item:hover { color: #fff; background: rgba(165,24,144,0.2); padding-left: 1.6rem; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--darkColor) 0%, #0d0e12 40%, #2a0a25 70%, var(--darkpurpleColor) 100%); min-height: 100vh; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239a1f8f' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .hero-glow { position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(165,24,144,0.25) 0%, transparent 70%); top: -100px; right: -100px; animation: pulse-glow 4s ease-in-out infinite; }
+    .hero-glow-2 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(110,43,98,0.3) 0%, transparent 70%); bottom: 50px; left: -100px; animation: pulse-glow 6s ease-in-out infinite reverse; }
+    @keyframes pulse-glow { 0%,100%{transform:scale(1);opacity:0.7} 50%{transform:scale(1.1);opacity:1} }
+
+    /* CTA Buttons */
+    .btn-primary { background: var(--cta-background-color); color: #fff; font-family: 'Outfit', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.85rem 2rem; border-radius: 4px; transition: all 0.3s; border: 2px solid var(--cta-background-color); cursor: pointer; font-size: 0.85rem; display: inline-block; }
+    .btn-primary:hover { background: transparent; color: var(--cta-background-color); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(165,24,144,0.3); }
+    .btn-outline { background: transparent; color: #fff; font-family: 'Outfit', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.85rem 2rem; border-radius: 4px; border: 2px solid #fff; transition: all 0.3s; cursor: pointer; font-size: 0.85rem; display: inline-block; }
+    .btn-outline:hover { background: #fff; color: var(--darkColor); transform: translateY(-2px); }
+    .btn-outline-purple { background: transparent; color: var(--cta-background-color); font-family: 'Outfit', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.75rem 1.75rem; border-radius: 4px; border: 2px solid var(--cta-background-color); transition: all 0.3s; cursor: pointer; font-size: 0.82rem; display: inline-block; }
+    .btn-outline-purple:hover { background: var(--cta-background-color); color: #fff; }
+
+    /* Section Styles */
+    .section-tag { color: var(--cta-background-color); font-family: 'Outfit', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.78rem; }
+    .section-title { font-family: 'Outfit', sans-serif; font-weight: 800; color: var(--darkColor); line-height: 1.1; }
+    .section-title-white { color: #fff; }
+    .purple-line { width: 60px; height: 3px; background: var(--cta-background-color); }
+
+    /* Product Cards */
+    .product-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden; transition: all 0.35s; }
+    .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(154,31,143,0.15); border-color: var(--purpleColor); }
+    .product-card-img { background: linear-gradient(135deg, var(--darkColor), #2a0a25); height: 220px; display: flex; align-items: center; justify-content: center; }
+    .product-card-badge { background: var(--cta-background-color); color: #fff; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 2px; }
+
+    /* Technology Icons */
+    .tech-icon { width: 70px; height: 70px; background: linear-gradient(135deg, var(--purpleColor), var(--darkpurpleColor)); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.6rem; transition: all 0.3s; }
+    .tech-icon:hover { transform: rotate(10deg) scale(1.1); }
+
+    /* Stats */
+    .stat-card { text-align: center; padding: 2rem; }
+    .stat-number { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 3.5rem; background: linear-gradient(135deg, #fff, var(--cta-background-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
+    .stat-label { color: #aaa; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; }
+
+    /* Testimonials */
+    .testimonial-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); transition: all 0.3s; }
+    .testimonial-card:hover { background: rgba(165,24,144,0.1); border-color: rgba(165,24,144,0.3); }
+
+    /* Event Cards */
+    .event-card { border-left: 4px solid var(--cta-background-color); background: #fff; border-radius: 0 8px 8px 0; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s; }
+    .event-card:hover { transform: translateX(5px); box-shadow: 0 8px 30px rgba(154,31,143,0.15); }
+
+    /* Dark section */
+    .dark-section { background: var(--darkColor); }
+    .purple-gradient-section { background: linear-gradient(135deg, var(--darkColor) 0%, #1a0618 50%, var(--darkpurpleColor) 100%); }
+
+    /* Page sections toggle */
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+
+    /* Breadcrumb */
+    .breadcrumb { background: #f3f3f3; padding: 1rem 0; }
+    .breadcrumb-item { color: #888; font-size: 0.82rem; }
+    .breadcrumb-item.active { color: var(--purpleColor); font-weight: 600; }
+    .breadcrumb-sep { color: #ccc; margin: 0 0.5rem; }
+
+    /* Form Inputs */
+    .form-input { width: 100%; padding: 0.85rem 1rem; border: 1px solid #ddd; border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; transition: border-color 0.3s; outline: none; }
+    .form-input:focus { border-color: var(--purpleColor); box-shadow: 0 0 0 3px rgba(154,31,143,0.1); }
+    .form-label { font-size: 0.82rem; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem; display: block; }
+
+    /* Footer */
+    footer { background: #0f1014; }
+    .footer-link { color: #888; font-size: 0.85rem; transition: color 0.3s; cursor: pointer; }
+    .footer-link:hover { color: var(--cta-background-color); }
+
+    /* Mobile menu */
+    .mobile-menu { display: none; background: var(--darkColor); padding: 1rem; }
+    .mobile-menu.open { display: block; }
+    .mobile-nav-item { display: block; padding: 0.75rem 1rem; color: #ccc; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; cursor: pointer; }
+    .mobile-nav-item:hover { color: var(--cta-background-color); }
+
+    /* Before/After Slider */
+    .ba-slider { position: relative; overflow: hidden; border-radius: 8px; cursor: ew-resize; }
+    .ba-before { position: absolute; inset: 0; }
+    .ba-after { position: relative; }
+    .ba-handle { position: absolute; top: 0; bottom: 0; width: 4px; background: #fff; left: 50%; transform: translateX(-50%); cursor: ew-resize; z-index: 10; }
+    .ba-handle::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 40px; height: 40px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+    /* Treatment Icons Animated */
+    .treatment-icon-wrap { position: relative; }
+    .treatment-icon-wrap::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px solid var(--cta-background-color); opacity: 0; transition: all 0.3s; }
+    .treatment-icon-wrap:hover::after { opacity: 1; transform: scale(1.1); }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Gradient text */
+    .gradient-text { background: linear-gradient(135deg, #fff 30%, var(--cta-background-color) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    /* Tab styling */
+    .tab-btn { padding: 0.65rem 1.5rem; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 4px; cursor: pointer; transition: all 0.3s; border: 2px solid transparent; }
+    .tab-btn.active { background: var(--cta-background-color); color: #fff; }
+    .tab-btn:not(.active) { color: #666; border-color: #ddd; }
+    .tab-btn:not(.active):hover { border-color: var(--purpleColor); color: var(--purpleColor); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Accordion */
+    .accordion-item { border-bottom: 1px solid #eee; }
+    .accordion-header { padding: 1.25rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--darkColor); transition: color 0.3s; }
+    .accordion-header:hover { color: var(--purpleColor); }
+    .accordion-body { display: none; padding-bottom: 1.25rem; color: #555; line-height: 1.7; }
+    .accordion-body.open { display: block; }
+
+    /* Animate lines */
+    @keyframes slideInLeft { from{opacity:0;transform:translateX(-40px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes slideInRight { from{opacity:0;transform:translateX(40px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .anim-left { animation: slideInLeft 0.8s ease forwards; }
+    .anim-right { animation: slideInRight 0.8s ease forwards; }
+    .anim-up { animation: fadeInUp 0.8s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    /* Sticky nav highlight */
+    .nav-pill-active { background: rgba(165,24,144,0.15); color: var(--cta-background-color) !important; border-radius: 4px; }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: var(--purpleColor); border-radius: 3px; }
+
+    /* Overlay for mobile nav */
+    .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 998; }
+    .nav-overlay.open { display: block; }
+
+    /* Cookie banner */
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--darkColor); color: #fff; padding: 1rem 2rem; z-index: 9999; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; transform: translateY(100%); transition: transform 0.5s; }
+    #cookie-banner.show { transform: translateY(0); }
+
+    /* Loader */
+    #page-loader { position: fixed; inset: 0; background: var(--darkColor); z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; transition: opacity 0.5s; }
+    #page-loader.hide { opacity: 0; pointer-events: none; }
+    .loader-logo { font-family: 'Outfit', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; }
+    .loader-logo span { color: var(--cta-background-color); }
+    .loader-bar { width: 200px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; margin-top: 1.5rem; overflow: hidden; }
+    .loader-bar-fill { height: 100%; background: var(--cta-background-color); border-radius: 2px; animation: loadFill 1.5s ease forwards; }
+    @keyframes loadFill { from{width:0} to{width:100%} }
+
+    /* Flag */
+    .uae-flag { display: inline-flex; align-items: center; gap: 0.4rem; }
+  </style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <div class="loader-logo">Pico<span>Tech</span></div>
+  <div style="color:#aaa;font-size:0.8rem;margin-top:0.5rem;letter-spacing:0.2em;text-transform:uppercase;">Medical Aesthetic Solutions</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner">
+  <p style="font-size:0.85rem;color:#ccc;flex:1">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <span style="color:var(--cta-background-color);cursor:pointer" onclick="showPage('privacy')">Learn more</span></p>
+  <div style="display:flex;gap:0.75rem">
+    <button class="btn-outline" style="padding:0.5rem 1.25rem;font-size:0.78rem" onclick="closeCookie()">Decline</button>
+    <button class="btn-primary" style="padding:0.5rem 1.25rem;font-size:0.78rem" onclick="closeCookie()">Accept All</button>
+  </div>
+</div>
+
+<!-- Utility Bar -->
+<div class="utility-bar py-1.5 px-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between text-xs text-white">
+    <div class="flex items-center gap-6">
+      <span class="uae-flag"><span>🇦🇪</span> Dubai, UAE</span>
+      <a href="tel:0507480783" class="hover:text-yellow-300 transition-colors"><i class="fas fa-phone mr-1"></i>050 748 0783</a>
+      <a href="mailto:newcity7555@gmail.com" class="hover:text-yellow-300 transition-colors hidden md:inline"><i class="fas fa-envelope mr-1"></i>newcity7555@gmail.com</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <span onclick="showPage('provider-portal')" class="cursor-pointer hover:text-yellow-300 transition-colors hidden sm:inline"><i class="fas fa-user-circle mr-1"></i>Provider Portal</span>
+      <span onclick="showPage('contact')" class="cursor-pointer hover:text-yellow-300 transition-colors"><i class="fas fa-headset mr-1"></i>Support</span>
+      <div class="flex gap-2 ml-2">
+        <a href="#" class="hover:text-yellow-300 transition-colors"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-yellow-300 transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-yellow-300 transition-colors"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="main-nav shadow-2xl">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home')">
+      <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;">
+        <i class="fas fa-atom text-white text-sm"></i>
+      </div>
+      <span class="nav-logo text-2xl font-black text-white" style="font-family:'Outfit',sans-serif;letter-spacing:-0.02em">Pico<span>Tech</span></span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-1">
+      <div class="dropdown">
+        <span class="nav-link" onclick="showPage('products')">Products <i class="fas fa-chevron-down text-xs ml-1"></i></span>
+        <div class="dropdown-menu">
+          <span class="dropdown-item" onclick="showPage('products')">All Products</span>
+          <span class="dropdown-item" onclick="showPage('products')">Laser Technology</span>
+          <span class="dropdown-item" onclick="showPage('products')">IPL Systems</span>
+          <span class="dropdown-item" onclick="showPage('products')">RF Microneedling</span>
+          <span class="dropdown-item" onclick="showPage('products')">Multi-Step Facials</span>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="nav-link" onclick="showPage('treatments')">Treatments <i class="fas fa-chevron-down text-xs ml-1"></i></span>
+        <div class="dropdown-menu">
+          <span class="dropdown-item" onclick="showPage('treatments')">Hair Removal</span>
+          <span class="dropdown-item" onclick="showPage('treatments')">Tattoo Removal</span>
+          <span class="dropdown-item" onclick="showPage('treatments')">Skin Tightening</span>
+          <span class="dropdown-item" onclick="showPage('treatments')">Pigmentation</span>
+          <span class="dropdown-item" onclick="showPage('treatments')">Vascular Conditions</span>
+          <span class="dropdown-item" onclick="showPage('treatments')">Skin Resurfacing</span>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="nav-link" onclick="showPage('resources')">Resources <i class="fas fa-chevron-down text-xs ml-1"></i></span>
+        <div class="dropdown-menu">
+          <span class="dropdown-item" onclick="showPage('resources')">Clinical Library</span>
+          <span class="dropdown-item" onclick="showPage('resources')">Marketing Center</span>
+          <span class="dropdown-item" onclick="showPage('resources')">Webinars</span>
+          <span class="dropdown-item" onclick="showPage('training')">Training & Education</span>
+        </div>
+      </div>
+      <span class="nav-link" onclick="showPage('events')">Events</span>
+      <div class="dropdown">
+        <span class="nav-link" onclick="showPage('company')">Company <i class="fas fa-chevron-down text-xs ml-1"></i></span>
+        <div class="dropdown-menu">
+          <span class="dropdown-item" onclick="showPage('company')">About PicoTech</span>
+          <span class="dropdown-item" onclick="showPage('company')">Clinical Advisory Board</span>
+          <span class="dropdown-item" onclick="showPage('company')">Careers</span>
+          <span class="dropdown-item" onclick="showPage('company')">News & Press</span>
+        </div>
+      </div>
+      <span class="nav-link" onclick="showPage('contact')">Contact</span>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="hidden lg:flex items-center gap-3">
+      <button class="btn-outline-purple" onclick="showPage('provider-portal')" style="padding:0.5rem 1.25rem;font-size:0.78rem">Provider Login</button>
+      <button class="btn-primary" onclick="showPage('contact')" style="padding:0.55rem 1.25rem;font-size:0.78rem">Get a Demo</button>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="hamburger" class="lg:hidden text-white text-xl p-2" onclick="toggleMobile()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <span class="mobile-nav-item" onclick="showPage('home');toggleMobile()">Home</span>
+    <span class="mobile-nav-item" onclick="showPage('products');toggleMobile()">Products</span>
+    <span class="mobile-nav-item" onclick="showPage('treatments');toggleMobile()">Treatments</span>
+    <span class="mobile-nav-item" onclick="showPage('resources');toggleMobile()">Resources</span>
+    <span class="mobile-nav-item" onclick="showPage('training');toggleMobile()">Training</span>
+    <span class="mobile-nav-item" onclick="showPage('events');toggleMobile()">Events</span>
+    <span class="mobile-nav-item" onclick="showPage('company');toggleMobile()">Company</span>
+    <span class="mobile-nav-item" onclick="showPage('contact');toggleMobile()">Contact</span>
+    <div class="mt-3 flex gap-2 px-3">
+      <button class="btn-outline-purple flex-1 text-center" onclick="showPage('provider-portal');toggleMobile()">Provider Login</button>
+      <button class="btn-primary flex-1 text-center" onclick="showPage('contact');toggleMobile()">Get a Demo</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== PAGE SECTIONS ==================== -->
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page-section active">
+
+  <!-- Hero -->
+  <section class="hero flex items-center">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 relative z-10 w-full">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center gap-2 mb-6 anim-left">
+            <div style="width:40px;height:2px;background:var(--cta-background-color)"></div>
+            <span class="section-tag">UAE's Premier Medical Aesthetic Solutions</span>
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black text-white leading-none mb-6 anim-left delay-1" style="font-family:'Outfit',sans-serif">
+            Precision<br/><span class="gradient-text">Technology</span><br/>That Transforms
+          </h1>
+          <p class="text-lg text-gray-300 mb-10 leading-relaxed anim-left delay-2 max-w-lg">
+            PicoTech delivers clinically-backed aesthetic devices trusted by leading practitioners across the UAE and Middle East. Advanced laser, IPL, and RF technology — engineered for exceptional outcomes.
+          </p>
+          <div class="flex flex-wrap gap-4 anim-left delay-3">
+            <button class="btn-primary" onclick="showPage('products')">Explore Technologies</button>
+            <button class="btn-outline" onclick="showPage('contact')">Request a Demo</button>
+          </div>
+          <!-- Trust badges -->
+          <div class="flex flex-wrap gap-6 mt-12 anim-left delay-4">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-shield-check text-2xl" style="color:var(--cta-background-color)"></i>
+              <div><div class="text-white text-xs font-bold uppercase tracking-wider">FDA Cleared</div><div class="text-gray-400 text-xs">All Devices</div></div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-award text-2xl" style="color:var(--cta-background-color)"></i>
+              <div><div class="text-white text-xs font-bold uppercase tracking-wider">CE Certified</div><div class="text-gray-400 text-xs">European Standard</div></div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-globe text-2xl" style="color:var(--cta-background-color)"></i>
+              <div><div class="text-white text-xs font-bold uppercase tracking-wider">50+ Countries</div><div class="text-gray-400 text-xs">Global Network</div></div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero Visual -->
+        <div class="relative hidden lg:block anim-right">
+          <div style="width:500px;height:500px;background:linear-gradient(135deg,rgba(154,31,143,0.2),rgba(110,43,98,0.3));border-radius:30px;border:1px solid rgba(165,24,144,0.3);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+            <!-- Animated device mockup -->
+            <div style="text-align:center">
+              <div style="width:160px;height:200px;background:linear-gradient(180deg,#2a2a35,#1a1a22);border-radius:20px;margin:0 auto;border:1px solid rgba(165,24,144,0.4);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(165,24,144,0.3)">
+                <i class="fas fa-atom text-5xl mb-3" style="color:var(--cta-background-color);animation:pulse-glow 2s infinite"></i>
+                <div style="width:80px;height:4px;background:linear-gradient(90deg,transparent,var(--cta-background-color),transparent);border-radius:2px;margin-bottom:1rem"></div>
+                <div style="color:#fff;font-family:'Outfit',sans-serif;font-weight:900;font-size:1.1rem">PICO<span style="color:var(--cta-background-color)">WAY</span></div>
+                <div style="color:#888;font-size:0.65rem;letter-spacing:0.1em">ELITE</div>
+              </div>
+              <!-- Energy rings -->
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:350px;height:350px;border-radius:50%;border:1px solid rgba(165,24,144,0.15);animation:pulse-glow 3s infinite"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:280px;height:280px;border-radius:50%;border:1px solid rgba(165,24,144,0.2);animation:pulse-glow 3s infinite 0.5s"></div>
+            </div>
+            <!-- Floating labels -->
+            <div style="position:absolute;top:30px;left:30px;background:rgba(165,24,144,0.2);border:1px solid rgba(165,24,144,0.4);border-radius:8px;padding:0.5rem 1rem">
+              <div style="color:#fff;font-size:0.75rem;font-weight:700">Picosecond</div>
+              <div style="color:var(--cta-background-color);font-size:0.65rem">450ps pulse</div>
+            </div>
+            <div style="position:absolute;bottom:40px;right:30px;background:rgba(165,24,144,0.2);border:1px solid rgba(165,24,144,0.4);border-radius:8px;padding:0.5rem 1rem">
+              <div style="color:#fff;font-size:0.75rem;font-weight:700">3 Wavelengths</div>
+              <div style="color:var(--cta-background-color);font-size:0.65rem">532 / 785 / 1064nm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div style="background:#f3f3f3;padding:1.5rem 0;overflow:hidden">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <span style="color:#aaa;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;white-space:nowrap">Trusted By Leading Clinics</span>
+        <div class="flex-1 h-px" style="background:#ddd;min-width:20px"></div>
+        <div class="flex flex-wrap gap-8 items-center justify-center">
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">Dubai Health</span>
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">Medcare</span>
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">Aster Clinics</span>
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">NMC Healthcare</span>
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">Emirates Hospital</span>
+          <span style="color:#bbb;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem">Kaya Skin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Showcase -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16 reveal">
+        <span class="section-tag">Our Technology Portfolio</span>
+        <h2 class="section-title text-4xl lg:text-5xl mt-3 mb-4">Precision Devices.<br/>Exceptional Results.</h2>
+        <div class="purple-line mx-auto mt-4"></div>
+        <p class="mt-5 text-gray-500 max-w-2xl mx-auto">Explore our full range of clinically-validated medical aesthetic systems, each designed to deliver measurable outcomes across a broad spectrum of treatments.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- GentlePro -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')">
+          <div class="product-card-img">
+            <div style="text-align:center">
+              <i class="fas fa-bolt" style="font-size:3rem;color:var(--cta-background-color);opacity:0.8;display:block;margin-bottom:0.75rem"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">GentlePro™</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">ALEXANDRITE / ND:YAG</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge">Gold Standard</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">GentlePro™ Series</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">The gold standard for laser hair removal. Dual-wavelength Alexandrite and Nd:YAG for all skin types and tones.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Hair Removal</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Vascularity</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Wrinkles</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+
+        <!-- PicoWay -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.1s">
+          <div class="product-card-img" style="background:linear-gradient(135deg,#1a0618,#2a1030)">
+            <div style="text-align:center">
+              <i class="fas fa-atom" style="font-size:3rem;color:var(--cta-background-color);opacity:0.8;display:block;margin-bottom:0.75rem;animation:pulse-glow 2s infinite"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">PicoWay®</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">PICOSECOND LASER</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge" style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor))">Bestseller</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">PicoWay® System</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">Ultra-short picosecond pulses for tattoo removal, acne scars, and complete skin rejuvenation with minimal downtime.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Tattoo Removal</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Acne Scars</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Wrinkles</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+
+        <!-- Nordlys -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.2s">
+          <div class="product-card-img" style="background:linear-gradient(135deg,#0a1a25,#1a3040)">
+            <div style="text-align:center">
+              <i class="fas fa-sun" style="font-size:3rem;color:#f0a;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Nordlys™</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">ELLIPSE IPL / ND:YAG / FRAX</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge" style="background:#0d8;color:#fff">Multi-Platform</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">Nordlys™ Platform</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">The most versatile multi-application platform combining Ellipse IPL, Nd:YAG, and fractional resurfacing in one system.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Vascularity</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Pigmentation</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Resurfacing</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+
+        <!-- Matrix -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')">
+          <div class="product-card-img" style="background:linear-gradient(135deg,#1a1505,#2a2010)">
+            <div style="text-align:center">
+              <i class="fas fa-microchip" style="font-size:3rem;color:#fa0;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Matrix™</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">RF MICRONEEDLING</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge" style="background:#e07800">Collagen Boost</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">Matrix™ RF System</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">Fractional RF microneedling for powerful skin tightening, collagen stimulation, and dramatic textural improvements.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Skin Tightening</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Collagen</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Texture</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+
+        <!-- Vbeam -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.1s">
+          <div class="product-card-img" style="background:linear-gradient(135deg,#1a0505,#2a1010)">
+            <div style="text-align:center">
+              <i class="fas fa-heartbeat" style="font-size:3rem;color:#f44;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Vbeam®</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">PULSED DYE LASER</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge" style="background:#c0392b">Dermatology</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">Vbeam® PDL</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">The world's most trusted pulsed dye laser for treating vascular lesions, rosacea, and a wide range of dermatological conditions.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Rosacea</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Vascular</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Scars</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+
+        <!-- Glace -->
+        <div class="product-card reveal cursor-pointer" onclick="showPage('products')" style="transition-delay:0.2s">
+          <div class="product-card-img" style="background:linear-gradient(135deg,#051520,#0a2030)">
+            <div style="text-align:center">
+              <i class="fas fa-spa" style="font-size:3rem;color:#0cf;opacity:0.8;display:block;margin-bottom:0.75rem"></i>
+              <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.3rem">Glacē™</div>
+              <div style="color:#aaa;font-size:0.75rem;letter-spacing:0.1em">MULTI-STEP FACIAL</div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="product-card-badge" style="background:#0a7a9a">Hydration+</span>
+            <h3 class="text-lg font-bold mt-3 mb-2" style="font-family:'Outfit',sans-serif">Glacē™ Facial System</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">A sophisticated multi-step facial treatment combining deep cleansing, exfoliation, extraction, and advanced hydration for radiant skin.</p>
+            <div class="flex flex-wrap gap-2">
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Cleansing</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Exfoliation</span>
+              <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px">Hydration</span>
+            </div>
+            <div class="mt-4 flex items-center" style="color:var(--purpleColor);font-size:0.82rem;font-weight:700">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="btn-primary" onclick="showPage('products')">View All Technologies</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Dark Section -->
+  <section class="dark-section py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-white/10">
+        <div class="stat-card reveal"><div class="stat-number">50+</div><div class="stat-label">Years of Innovation</div></div>
+        <div class="stat-card reveal" style="transition-delay:0.1s"><div class="stat-number">100+</div><div class="stat-label">Countries Served</div></div>
+        <div class="stat-card reveal" style="transition-delay:0.2s"><div class="stat-number">1M+</div><div class="stat-label">Treatments Performed</div></div>
+        <div class="stat-card reveal" style="transition-delay:0.3s"><div class="stat-number">6</div><div class="stat-label">Product Platforms</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <span class="section-tag">Clinical Treatments</span>
+          <h2 class="section-title text-4xl lg:text-5xl mt-3 mb-5">Comprehensive<br/>Treatment Range</h2>
+          <div class="purple-line mb-6"></div>
+          <p class="text-gray-500 leading-relaxed mb-8">PicoTech systems are designed to address the full spectrum of medical aesthetic needs — from hair and tattoo removal to advanced skin rejuvenation and dermatological conditions.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-magic mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Hair Removal</div><div class="text-gray-500 text-xs mt-1">All skin types & tones</div></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-circle mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Tattoo Removal</div><div class="text-gray-500 text-xs mt-1">Complete ink clearance</div></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-tint mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Vascular Lesions</div><div class="text-gray-500 text-xs mt-1">Redness & vessels</div></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-leaf mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Pigmentation</div><div class="text-gray-500 text-xs mt-1">Spots & melasma</div></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-layer-group mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Skin Resurfacing</div><div class="text-gray-500 text-xs mt-1">Texture & tone</div></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg" style="cursor:pointer" onclick="showPage('treatments')">
+              <i class="fas fa-asterisk mt-1" style="color:var(--cta-background-color)"></i>
+              <div><div class="font-bold text-sm" style="font-family:'Outfit',sans-serif">Skin Tightening</div><div class="text-gray-500 text-xs mt-1">Lift & contour</div></div>
+            </div>
+          </div>
+          <button class="btn-primary mt-8" onclick="showPage('treatments')">All Treatments</button>
+        </div>
+        <div class="reveal" style="transition-delay:0.2s">
+          <!-- Before/After Visual -->
+          <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(154,31,143,0.2)">
+            <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:2.5rem;text-align:center">
+              <div style="display:inline-block;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:2rem 3rem">
+                <div style="display:flex;gap:3rem;align-items:center">
+                  <div style="text-align:center">
+                    <div style="width:80px;height:80px;background:rgba(100,100,100,0.3);border-radius:50%;margin:0 auto 0.75rem;display:flex;align-items:center;justify-content:center">
+                      <i class="fas fa-user-circle text-3xl text-gray-400"></i>
+                    </div>
+                    <div style="color:#aaa;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em">Before</div>
+                  </div>
+                  <div style="color:var(--cta-background-color);font-size:1.5rem"><i class="fas fa-arrow-right"></i></div>
+                  <div style="text-align:center">
+                    <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;margin:0 auto 0.75rem;display:flex;align-items:center;justify-content:center">
+                      <i class="fas fa-star text-3xl text-white"></i>
+                    </div>
+                    <div style="color:var(--cta-background-color);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:700">After</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6">
+                <p style="color:#ccc;font-size:0.9rem;margin-bottom:1rem">Clinical results after 3 sessions with PicoWay®</p>
+                <div class="flex justify-center gap-4 text-sm">
+                  <div style="background:rgba(165,24,144,0.2);border:1px solid rgba(165,24,144,0.3);border-radius:6px;padding:0.5rem 1rem;color:var(--cta-background-color);font-weight:700">95% satisfaction</div>
+                  <div style="background:rgba(165,24,144,0.2);border:1px solid rgba(165,24,144,0.3);border-radius:6px;padding:0.5rem 1rem;color:var(--cta-background-color);font-weight:700">Minimal downtime</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Feature list -->
+          <div class="mt-6 space-y-3">
+            <div class="flex items-center gap-3"><i class="fas fa-check-circle" style="color:var(--cta-background-color)"></i><span class="text-sm text-gray-600">Clinically proven results backed by peer-reviewed research</span></div>
+            <div class="flex items-center gap-3"><i class="fas fa-check-circle" style="color:var(--cta-background-color)"></i><span class="text-sm text-gray-600">Safe for all Fitzpatrick skin types I–VI</span></div>
+            <div class="flex items-center gap-3"><i class="fas fa-check-circle" style="color:var(--cta-background-color)"></i><span class="text-sm text-gray-600">Minimal downtime — return to daily activities quickly</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training & Support -->
+  <section class="py-24" style="background:#f9f9f9">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16 reveal">
+        <span class="section-tag">Partner Ecosystem</span>
+        <h2 class="section-title text-4xl lg:text-5xl mt-3 mb-4">Your Success is<br/>Our Mission</h2>
+        <div class="purple-line mx-auto mt-4"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-xl p-6 text-center reveal cursor-pointer hover:shadow-xl transition-all" onclick="showPage('training')">
+          <div class="tech-icon mx-auto mb-4"><i class="fas fa-graduation-cap"></i></div>
+          <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Training Institute</h3>
+          <p class="text-gray-500 text-sm">Hands-on clinical training, workshops & certificate programs by leading experts.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center reveal cursor-pointer hover:shadow-xl transition-all" onclick="showPage('resources')" style="transition-delay:0.1s">
+          <div class="tech-icon mx-auto mb-4" style="background:linear-gradient(135deg,#2b7cd4,#1a5a9a)"><i class="fas fa-book-medical"></i></div>
+          <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Clinical Library</h3>
+          <p class="text-gray-500 text-sm">White papers, clinical studies, and evidence-based research at your fingertips.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center reveal cursor-pointer hover:shadow-xl transition-all" onclick="showPage('resources')" style="transition-delay:0.2s">
+          <div class="tech-icon mx-auto mb-4" style="background:linear-gradient(135deg,#2d9e2d,#1a6e1a)"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Marketing Center</h3>
+          <p class="text-gray-500 text-sm">Downloadable assets, social media templates and co-branded materials for your clinic.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center reveal cursor-pointer hover:shadow-xl transition-all" onclick="showPage('provider-portal')" style="transition-delay:0.3s">
+          <div class="tech-icon mx-auto mb-4" style="background:linear-gradient(135deg,#e07800,#a85800)"><i class="fas fa-headset"></i></div>
+          <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">24/7 Support</h3>
+          <p class="text-gray-500 text-sm">Dedicated technical support team and customer portal for seamless service management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="purple-gradient-section py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16 reveal">
+        <span class="section-tag">Provider Voices</span>
+        <h2 class="text-4xl lg:text-5xl font-black text-white mt-3" style="font-family:'Outfit',sans-serif">Trusted by Leading<br/>Practitioners in the UAE</h2>
+        <div class="purple-line mx-auto mt-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="testimonial-card reveal">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">"PicoTech's GentlePro™ has transformed our hair removal practice. The results on all skin types — particularly Fitzpatrick V and VI common in our Middle Eastern clientele — are exceptional."</p>
+          <div class="flex items-center gap-3">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center"><i class="fas fa-user text-white text-sm"></i></div>
+            <div><div class="text-white font-bold text-sm">Dr. Fatima Al-Rashidi</div><div class="text-gray-400 text-xs">Medical Director, Glow Clinic Dubai</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.15s">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">"The PicoWay® system is outstanding. The training provided by PicoTech's team was comprehensive and the clinical support has been excellent. My patients love the results."</p>
+          <div class="flex items-center gap-3">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center"><i class="fas fa-user text-white text-sm"></i></div>
+            <div><div class="text-white font-bold text-sm">Dr. Ahmed Hassan</div><div class="text-gray-400 text-xs">Dermatologist, Abu Dhabi Skin Centre</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.3s">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i><i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">"The Matrix™ RF system has been a game-changer for our skin tightening treatments. Measurable, consistent results with every session — and the ROI has been remarkable."</p>
+          <div class="flex items-center gap-3">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center"><i class="fas fa-user text-white text-sm"></i></div>
+            <div><div class="text-white font-bold text-sm">Dr. Sarah Khalil</div><div class="text-gray-400 text-xs">Plastic Surgeon, Sharjah Medical City</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));padding:5rem 0">
+    <div class="max-w-4xl mx-auto px-4 text-center reveal">
+      <h2 class="text-4xl lg:text-5xl font-black text-white mb-4" style="font-family:'Outfit',sans-serif">Ready to Elevate Your Practice?</h2>
+      <p class="text-lg text-white/80 mb-8">Schedule a personalized demo with our clinical team. Discover how PicoTech technology can expand your treatment menu and drive revenue growth.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="btn-primary" style="background:#fff;color:var(--purpleColor);border-color:#fff" onclick="showPage('contact')">Request a Demo</button>
+        <button class="btn-outline" onclick="showPage('products')">View Products</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Preview -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div class="reveal">
+          <span class="section-tag">Events & Training</span>
+          <h2 class="section-title text-4xl mt-3">Upcoming Events</h2>
+          <div class="purple-line mt-4"></div>
+        </div>
+        <button class="btn-outline-purple mt-4 md:mt-0 reveal" onclick="showPage('events')">View All Events</button>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="event-card reveal">
+          <div class="flex gap-4 items-start">
+            <div style="background:var(--cta-background-color);color:#fff;border-radius:8px;padding:0.5rem 0.75rem;text-align:center;min-width:55px">
+              <div style="font-size:1.5rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">15</div>
+              <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em">Apr</div>
+            </div>
+            <div>
+              <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Advanced Laser Workshop</h4>
+              <p class="text-gray-500 text-xs mt-1">Dubai Healthcare City, UAE</p>
+              <p class="text-gray-400 text-xs mt-1">Hands-on training with GentlePro™ & PicoWay®</p>
+              <button class="btn-outline-purple mt-3" style="padding:0.35rem 0.85rem;font-size:0.72rem" onclick="showPage('events')">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="event-card reveal" style="transition-delay:0.1s">
+          <div class="flex gap-4 items-start">
+            <div style="background:var(--cta-background-color);color:#fff;border-radius:8px;padding:0.5rem 0.75rem;text-align:center;min-width:55px">
+              <div style="font-size:1.5rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">22</div>
+              <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em">Apr</div>
+            </div>
+            <div>
+              <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Aesthetic Business Webinar</h4>
+              <p class="text-gray-500 text-xs mt-1">Online – Live Stream</p>
+              <p class="text-gray-400 text-xs mt-1">Maximizing ROI with energy-based devices</p>
+              <button class="btn-outline-purple mt-3" style="padding:0.35rem 0.85rem;font-size:0.72rem" onclick="showPage('events')">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="event-card reveal" style="transition-delay:0.2s">
+          <div class="flex gap-4 items-start">
+            <div style="background:var(--cta-background-color);color:#fff;border-radius:8px;padding:0.5rem 0.75rem;text-align:center;min-width:55px">
+              <div style="font-size:1.5rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">10</div>
+              <div style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em">May</div>
+            </div>
+            <div>
+              <h4 class="font-bold" style="font-family:'Outfit',sans-serif">AMWC Middle East 2026</h4>
+              <p class="text-gray-500 text-xs mt-1">Madinat Jumeirah, Dubai</p>
+              <p class="text-gray-400 text-xs mt-1">Visit PicoTech at Booth #A12</p>
+              <button class="btn-outline-purple mt-3" style="padding:0.35rem 0.85rem;font-size:0.72rem" onclick="showPage('events')">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find a Provider -->
+  <section style="background:var(--darkColor);padding:4rem 0">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <span class="section-tag">Patient Services</span>
+          <h2 class="text-3xl font-black text-white mt-2 mb-3" style="font-family:'Outfit',sans-serif">Find a PicoTech Provider Near You</h2>
+          <p class="text-gray-400 mb-6">Locate certified PicoTech practitioners in the UAE and across the Middle East. All listed providers are trained and certified by our clinical team.</p>
+          <button class="btn-primary" onclick="showPage('contact')">Find a Provider</button>
+        </div>
+        <div class="reveal" style="transition-delay:0.2s">
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:2rem">
+            <div class="flex items-center gap-3 mb-4">
+              <div style="flex:1;background:rgba(255,255,255,0.1);border-radius:6px;padding:0.75rem 1rem;color:#ccc;font-size:0.9rem">Search by City or Emirate...</div>
+              <button class="btn-primary" style="padding:0.75rem 1.25rem;white-space:nowrap" onclick="showPage('contact')"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between py-2 border-b border-white/10">
+                <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-xs" style="color:var(--cta-background-color)"></i><span class="text-white text-sm">Dubai</span></div>
+                <span style="color:var(--cta-background-color);font-size:0.78rem;font-weight:700">24 Providers</span>
+              </div>
+              <div class="flex items-center justify-between py-2 border-b border-white/10">
+                <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-xs" style="color:var(--cta-background-color)"></i><span class="text-white text-sm">Abu Dhabi</span></div>
+                <span style="color:var(--cta-background-color);font-size:0.78rem;font-weight:700">18 Providers</span>
+              </div>
+              <div class="flex items-center justify-between py-2 border-b border-white/10">
+                <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-xs" style="color:var(--cta-background-color)"></i><span class="text-white text-sm">Sharjah</span></div>
+                <span style="color:var(--cta-background-color);font-size:0.78rem;font-weight:700">11 Providers</span>
+              </div>
+              <div class="flex items-center justify-between py-2">
+                <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-xs" style="color:var(--cta-background-color)"></i><span class="text-white text-sm">Other Emirates</span></div>
+                <span style="color:var(--cta-background-color);font-size:0.78rem;font-weight:700">9 Providers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- END HOME PAGE -->
+
+<!-- ===== PRODUCTS PAGE ===== -->
+<div id="page-products" class="page-section">
+  <div class="breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 flex items-center gap-2">
+      <span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-item active">Products</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <span class="section-tag">Technology Portfolio</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Our Product Range</h1>
+      <p class="text-gray-300 max-w-2xl mx-auto">Six advanced platforms. Hundreds of treatments. One trusted partner for your aesthetic practice in the UAE.</p>
+    </div>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div style="background:#f9f9f9;padding:1.5rem 0;position:sticky;top:64px;z-index:99;border-bottom:1px solid #eee">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap gap-2">
+      <button class="tab-btn active" onclick="filterProducts('all',this)">All Products</button>
+      <button class="tab-btn" onclick="filterProducts('laser',this)">Laser</button>
+      <button class="tab-btn" onclick="filterProducts('ipl',this)">IPL</button>
+      <button class="tab-btn" onclick="filterProducts('rf',this)">RF Technology</button>
+      <button class="tab-btn" onclick="filterProducts('facial',this)">Facial Systems</button>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div id="products-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product Detail Card - GentlePro -->
+      <div class="product-card" data-cat="laser">
+        <div class="product-card-img">
+          <div style="text-align:center">
+            <i class="fas fa-bolt" style="font-size:4rem;color:var(--cta-background-color);opacity:0.9;display:block;margin-bottom:1rem"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">GentlePro™</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ALEXANDRITE / ND:YAG LASER</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge">Gold Standard</span>
+            <span class="product-card-badge" style="background:var(--darkpurpleColor)">FDA Cleared</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">GentlePro™ Series</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">The world's most trusted laser platform for hair removal. Dual-wavelength technology covering Alexandrite (755nm) and Nd:YAG (1064nm) for safe treatment across all Fitzpatrick skin types.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Dual wavelength: 755nm & 1064nm</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Dynamic Cooling Device™ (DCD)</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Large spot size — faster treatment times</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">All Fitzpatrick types I–VI</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Hair Removal</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Vascularity</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Wrinkles</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+
+      <!-- PicoWay -->
+      <div class="product-card" data-cat="laser">
+        <div class="product-card-img" style="background:linear-gradient(135deg,#1a0618,#2a1030)">
+          <div style="text-align:center">
+            <i class="fas fa-atom" style="font-size:4rem;color:var(--cta-background-color);opacity:0.9;display:block;margin-bottom:1rem;animation:pulse-glow 2s infinite"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">PicoWay®</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PICOSECOND LASER SYSTEM</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge" style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor))">Bestseller</span>
+            <span class="product-card-badge">FDA Cleared</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">PicoWay® System</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">The most powerful picosecond laser available. Ultra-short pulses (450ps) deliver peak power for superior tattoo removal, acne scar treatment, and complete skin rejuvenation.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">450 picosecond pulse duration</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">3 wavelengths: 532 / 785 / 1064nm</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">RESOLVE fractional handpiece included</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Effective on all ink colors</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Tattoo Removal</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Acne Scars</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Skin Rejuvenation</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+
+      <!-- Nordlys -->
+      <div class="product-card" data-cat="ipl">
+        <div class="product-card-img" style="background:linear-gradient(135deg,#0a1a25,#1a3040)">
+          <div style="text-align:center">
+            <i class="fas fa-sun" style="font-size:4rem;color:#e0a0ff;opacity:0.9;display:block;margin-bottom:1rem"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Nordlys™</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">ELLIPSE IPL / ND:YAG / FRAX</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge" style="background:#2d9e2d">Multi-Platform</span>
+            <span class="product-card-badge">CE Marked</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">Nordlys™ Platform</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">The most versatile multi-application platform on the market. Combines Ellipse IPL, Nd:YAG, and Frax fractional resurfacing handpieces in a single, sleek system.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Ellipse IPL — superior light filtering</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Nd:YAG 1064nm for deep vascular</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Frax 1550nm fractional resurfacing</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">12+ clinical handpieces available</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Vascularity</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Pigmentation</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Resurfacing</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+
+      <!-- Matrix -->
+      <div class="product-card" data-cat="rf">
+        <div class="product-card-img" style="background:linear-gradient(135deg,#1a1505,#2a2010)">
+          <div style="text-align:center">
+            <i class="fas fa-microchip" style="font-size:4rem;color:#ffa500;opacity:0.9;display:block;margin-bottom:1rem"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Matrix™</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">RF MICRONEEDLING</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge" style="background:#e07800">Collagen Boost</span>
+            <span class="product-card-badge">FDA Cleared</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">Matrix™ RF System</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Fractional RF microneedling delivering precise radiofrequency energy directly into the dermis. Stimulates powerful collagen remodeling for dramatic skin tightening and textural improvements.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Adjustable needle depth 0.5–3.5mm</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Coated & uncoated needle options</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Real-time impedance monitoring</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Safe for all skin types</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Skin Tightening</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Collagen</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Scars</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+
+      <!-- Vbeam -->
+      <div class="product-card" data-cat="laser">
+        <div class="product-card-img" style="background:linear-gradient(135deg,#1a0505,#2a1010)">
+          <div style="text-align:center">
+            <i class="fas fa-heartbeat" style="font-size:4rem;color:#ff6666;opacity:0.9;display:block;margin-bottom:1rem"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Vbeam®</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">PULSED DYE LASER</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge" style="background:#c0392b">Dermatology</span>
+            <span class="product-card-badge">FDA Cleared</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">Vbeam® PDL</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">The world's most trusted pulsed dye laser. The 595nm wavelength specifically targets oxyhemoglobin for unparalleled treatment of vascular lesions, rosacea, and dermatological conditions.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">595nm wavelength — targets hemoglobin</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Variable pulse duration 0.45–40ms</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">DCD cryogen cooling system</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Purpura-free settings available</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Rosacea</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Vascular Lesions</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Scars</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+
+      <!-- Glace -->
+      <div class="product-card" data-cat="facial">
+        <div class="product-card-img" style="background:linear-gradient(135deg,#051520,#0a2030)">
+          <div style="text-align:center">
+            <i class="fas fa-spa" style="font-size:4rem;color:#00ccff;opacity:0.9;display:block;margin-bottom:1rem"></i>
+            <div style="font-family:'Outfit',sans-serif;font-weight:900;color:#fff;font-size:1.5rem;letter-spacing:-0.02em">Glacē™</div>
+            <div style="color:#aaa;font-size:0.7rem;letter-spacing:0.15em;margin-top:0.25rem">MULTI-STEP FACIAL SYSTEM</div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-2 mb-3">
+            <span class="product-card-badge" style="background:#0a7a9a">Hydration+</span>
+            <span class="product-card-badge">CE Marked</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="font-family:'Outfit',sans-serif">Glacē™ Facial System</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">A sophisticated, physician-grade multi-step facial treatment. Combines advanced cleansing, exfoliation, hydradermabrasion, and infusion technology for immediate visible results.</p>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">6-step treatment protocol</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Hydradermabrasion + infusion</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Zero downtime — immediate results</span></div>
+            <div class="flex items-center gap-2 text-sm"><i class="fas fa-check" style="color:var(--cta-background-color);font-size:0.7rem"></i><span class="text-gray-600">Fully customizable for skin type</span></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Cleansing</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Exfoliation</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Hydration</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Request Information</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="mt-20">
+      <h2 class="section-title text-3xl text-center mb-10">Product Comparison</h2>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:0.85rem">
+          <thead>
+            <tr style="background:var(--darkColor);color:#fff">
+              <th style="padding:1rem;text-align:left;font-family:'Outfit',sans-serif;letter-spacing:0.05em">Device</th>
+              <th style="padding:1rem;text-align:center">Technology</th>
+              <th style="padding:1rem;text-align:center">Hair Removal</th>
+              <th style="padding:1rem;text-align:center">Tattoo Removal</th>
+              <th style="padding:1rem;text-align:center">Skin Tightening</th>
+              <th style="padding:1rem;text-align:center">Vascular</th>
+              <th style="padding:1rem;text-align:center">Resurfacing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #eee"><td style="padding:1rem;font-weight:700">GentlePro™</td><td style="padding:1rem;text-align:center;color:#666">Alexandrite/Nd:YAG</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓</td><td style="padding:1rem;text-align:center;color:green">✓✓</td><td style="padding:1rem;text-align:center;color:#ccc">–</td></tr>
+            <tr style="border-bottom:1px solid #eee;background:#fafafa"><td style="padding:1rem;font-weight:700">PicoWay®</td><td style="padding:1rem;text-align:center;color:#666">Picosecond</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td><td style="padding:1rem;text-align:center;color:green">✓✓</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td></tr>
+            <tr style="border-bottom:1px solid #eee"><td style="padding:1rem;font-weight:700">Nordlys™</td><td style="padding:1rem;text-align:center;color:#666">IPL/Nd:YAG/Frax</td><td style="padding:1rem;text-align:center;color:green">✓✓</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td><td style="padding:1rem;text-align:center;color:green">✓✓</td></tr>
+            <tr style="border-bottom:1px solid #eee;background:#fafafa"><td style="padding:1rem;font-weight:700">Matrix™</td><td style="padding:1rem;text-align:center;color:#666">RF Microneedling</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓</td></tr>
+            <tr style="border-bottom:1px solid #eee"><td style="padding:1rem;font-weight:700">Vbeam®</td><td style="padding:1rem;text-align:center;color:#666">Pulsed Dye</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓✓</td><td style="padding:1rem;text-align:center;color:green">✓</td></tr>
+            <tr style="background:#fafafa"><td style="padding:1rem;font-weight:700">Glacē™</td><td style="padding:1rem;text-align:center;color:#666">Multi-Step</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:#ccc">–</td><td style="padding:1rem;text-align:center;color:green">✓✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:#aaa;font-size:0.75rem;margin-top:0.75rem">✓ = Basic | ✓✓ = Good | ✓✓✓ = Excellent</p>
+    </div>
+  </div>
+</div>
+<!-- END PRODUCTS -->
+
+<!-- ===== TREATMENTS PAGE ===== -->
+<div id="page-treatments" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Treatments</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Clinical Applications</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Treatments We Enable</h1>
+      <p class="text-gray-300">Every PicoTech device is engineered to deliver measurable clinical outcomes across a broad spectrum of aesthetic conditions.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Hair Removal -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-gray-100">
+      <div>
+        <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));border-radius:16px;height:300px;display:flex;align-items:center;justify-content:center">
+          <div style="text-align:center">
+            <i class="fas fa-magic" style="font-size:5rem;color:var(--cta-background-color);opacity:0.8"></i>
+            <div style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:1.2rem;margin-top:1rem">Hair Removal</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">Treatment 01</span>
+        <h2 class="section-title text-4xl mt-2 mb-4">Laser Hair Removal</h2>
+        <div class="purple-line mb-5"></div>
+        <p class="text-gray-500 leading-relaxed mb-6">PicoTech's GentlePro™ system delivers the gold standard in permanent hair reduction. The dual-wavelength platform safely treats all skin types and hair colors, including darker skin tones common across the Middle East and South Asian populations.</p>
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <div style="background:#f9f9f9;border-radius:8px;padding:1rem"><div style="color:var(--purpleColor);font-weight:900;font-size:1.5rem;font-family:'Outfit',sans-serif">90%</div><div style="color:#888;font-size:0.78rem">Permanent Reduction</div></div>
+          <div style="background:#f9f9f9;border-radius:8px;padding:1rem"><div style="color:var(--purpleColor);font-weight:900;font-size:1.5rem;font-family:'Outfit',sans-serif">I–VI</div><div style="color:#888;font-size:0.78rem">All Fitzpatrick Types</div></div>
+          <div style="background:#f9f9f9;border-radius:8px;padding:1rem"><div style="color:var(--purpleColor);font-weight:900;font-size:1.5rem;font-family:'Outfit',sans-serif">6–8</div><div style="color:#888;font-size:0.78rem">Sessions Needed</div></div>
+          <div style="background:#f9f9f9;border-radius:8px;padding:1rem"><div style="color:var(--purpleColor);font-weight:900;font-size:1.5rem;font-family:'Outfit',sans-serif">0</div><div style="color:#888;font-size:0.78rem">Downtime</div></div>
+        </div>
+        <button class="btn-primary" onclick="showPage('products')">View GentlePro™</button>
+      </div>
+    </div>
+
+    <!-- Tattoo Removal -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-gray-100">
+      <div class="lg:order-2">
+        <div style="background:linear-gradient(135deg,#1a0618,#2a1030);border-radius:16px;height:300px;display:flex;align-items:center;justify-content:center">
+          <div style="text-align:center">
+            <i class="fas fa-circle" style="font-size:5rem;color:var(--cta-background-color);opacity:0.8"></i>
+            <div style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:1.2rem;margin-top:1rem">Tattoo Removal</div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:order-1">
+        <span class="section-tag">Treatment 02</span>
+        <h2 class="section-title text-4xl mt-2 mb-4">Tattoo Removal</h2>
+        <div class="purple-line mb-5"></div>
+        <p class="text-gray-500 leading-relaxed mb-6">The PicoWay® system delivers the highest peak power available in a picosecond laser — shattering tattoo ink into micro-particles that are naturally eliminated by the body. Effective on all ink colors, including resistant blues and greens.</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center gap-3"><i class="fas fa-palette" style="color:var(--cta-background-color)"></i><span class="text-gray-600">All ink colors including blues, greens & reds</span></div>
+          <div class="flex items-center gap-3"><i class="fas fa-layer-group" style="color:var(--cta-background-color)"></i><span class="text-gray-600">Professional, amateur, and cosmetic tattoos</span></div>
+          <div class="flex items-center gap-3"><i class="fas fa-clock" style="color:var(--cta-background-color)"></i><span class="text-gray-600">Fewer sessions vs. nanosecond lasers</span></div>
+          <div class="flex items-center gap-3"><i class="fas fa-user-shield" style="color:var(--cta-background-color)"></i><span class="text-gray-600">Minimal risk of scarring or pigmentation changes</span></div>
+        </div>
+        <button class="btn-primary" onclick="showPage('products')">View PicoWay®</button>
+      </div>
+    </div>
+
+    <!-- More treatments in grid -->
+    <h2 class="section-title text-3xl text-center mb-10">Additional Treatment Areas</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-tint text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Vascular Conditions</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Treat rosacea, spider veins, port wine stains, and vascular birthmarks with the Vbeam® PDL — the most clinically proven vascular laser.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: Vbeam® →</div>
+      </div>
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-leaf text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Pigmentation & Melasma</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Target age spots, sunspots, melasma, and hyperpigmentation using Nordlys™ IPL or PicoWay® picosecond technology.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: Nordlys™ / PicoWay® →</div>
+      </div>
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-layer-group text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Skin Resurfacing</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Improve skin texture, reduce pore size, and treat acne scars through fractional resurfacing with Nordlys™ Frax or PicoWay® RESOLVE.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: Nordlys™ / PicoWay® →</div>
+      </div>
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-asterisk text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Skin Tightening</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Achieve firm, lifted skin through deep collagen stimulation with Matrix™ RF microneedling — no surgery, minimal downtime.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: Matrix™ →</div>
+      </div>
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-spa text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Skin Hydration</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Deep cleansing, exfoliation, and intense hydration with the Glacē™ multi-step facial system — immediate glow with no downtime.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: Glacē™ →</div>
+      </div>
+      <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem;transition:all 0.3s;cursor:pointer" class="hover:shadow-lg" onclick="showPage('products')">
+        <div style="width:50px;height:50px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem"><i class="fas fa-star-of-life text-white"></i></div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Outfit',sans-serif">Acne & Acne Scars</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Address active acne and post-acne scarring through combined phototherapy and fractional resurfacing treatments.</p>
+        <div style="color:var(--purpleColor);font-size:0.82rem;font-weight:700;margin-top:1rem">Recommended: PicoWay® / Matrix™ →</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== RESOURCES PAGE ===== -->
+<div id="page-resources" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Resources</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Knowledge Hub</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Resources & Support</h1>
+      <p class="text-gray-300">Everything you need to grow your practice, train your team, and deliver exceptional patient outcomes.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Resource tabs -->
+    <div class="flex flex-wrap gap-3 mb-12">
+      <button class="tab-btn active" onclick="switchTab('res','clinical',this)">Clinical Library</button>
+      <button class="tab-btn" onclick="switchTab('res','marketing',this)">Marketing Center</button>
+      <button class="tab-btn" onclick="switchTab('res','webinars',this)">Webinars</button>
+    </div>
+
+    <!-- Clinical Library -->
+    <div id="res-clinical" class="tab-content active">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));padding:1.5rem">
+            <i class="fas fa-file-medical-alt text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">White Paper</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">PicoWay® vs. Nanosecond Lasers: Clinical Efficacy Review</h3>
+            <p class="text-gray-500 text-sm mb-4">Comprehensive comparison of picosecond vs. nanosecond technology for tattoo and pigmentation removal.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,#1a4a8a,#0a2a6a);padding:1.5rem">
+            <i class="fas fa-microscope text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">Clinical Study</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">GentlePro™ Hair Removal on Fitzpatrick V–VI: 2-Year Follow-Up</h3>
+            <p class="text-gray-500 text-sm mb-4">Long-term efficacy and safety data for laser hair removal in darker skin types common in Middle Eastern patients.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,#1a5a1a,#0a3a0a);padding:1.5rem">
+            <i class="fas fa-chart-line text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">Research</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">RF Microneedling for Skin Laxity: Histological Evidence</h3>
+            <p class="text-gray-500 text-sm mb-4">Histological analysis confirming dermal collagen remodeling following Matrix™ RF microneedling treatment series.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,#5a1a1a,#3a0a0a);padding:1.5rem">
+            <i class="fas fa-book-open text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">Case Study</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">Vbeam® for Pediatric Port Wine Stain: A Multi-Center Study</h3>
+            <p class="text-gray-500 text-sm mb-4">Multi-center data confirming the safety and effectiveness of PDL treatment for pediatric vascular birthmarks.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,#5a4a1a,#3a2a0a);padding:1.5rem">
+            <i class="fas fa-flask text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">White Paper</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">Nordlys™ IPL Technology: Clinical Applications Overview</h3>
+            <p class="text-gray-500 text-sm mb-4">Comprehensive review of Ellipse IPL clinical applications for photorejuvenation, hair removal, and acne management.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden;transition:all 0.3s" class="hover:shadow-lg">
+          <div style="background:linear-gradient(135deg,#1a1a5a,#0a0a3a);padding:1.5rem">
+            <i class="fas fa-stethoscope text-white text-3xl"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <span style="background:#f3f3f3;color:#888;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;text-transform:uppercase">Clinical Study</span>
+            <h3 class="font-bold mt-2 mb-2" style="font-family:'Outfit',sans-serif">Acne Scar Treatment: PicoWay® RESOLVE Fractional Data</h3>
+            <p class="text-gray-500 text-sm mb-4">Prospective clinical data on efficacy and safety of RESOLVE fractional handpiece for atrophic acne scar improvement.</p>
+            <button class="btn-outline-purple w-full" onclick="showPage('provider-portal')"><i class="fas fa-lock mr-2 text-xs"></i>Access (Login Required)</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <button class="btn-primary" onclick="showPage('provider-portal')">Access Full Clinical Library</button>
+      </div>
+    </div>
+
+    <!-- Marketing Center -->
+    <div id="res-marketing" class="tab-content">
+      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8 flex items-center gap-3">
+        <i class="fas fa-lock text-yellow-600"></i>
+        <p class="text-sm text-yellow-800">Marketing assets are available exclusively to registered PicoTech partners. <span class="font-bold cursor-pointer underline" onclick="showPage('provider-portal')">Log in to the Provider Portal</span> to access all materials.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-image text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Social Media Templates</h3>
+          <p class="text-gray-500 text-sm mb-4">Ready-to-post Instagram, Facebook and LinkedIn templates for each PicoTech treatment.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-file-pdf text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Patient Brochures</h3>
+          <p class="text-gray-500 text-sm mb-4">Print-ready patient education brochures for each treatment modality — branded for PicoTech.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-video text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Video Content</h3>
+          <p class="text-gray-500 text-sm mb-4">Treatment overview videos, device demonstration clips, and testimonial content for your website and social media.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-globe text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Website Banners</h3>
+          <p class="text-gray-500 text-sm mb-4">Clinic website banners and hero images — high-resolution, multi-size, Arabic & English versions.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-ad text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Digital Ad Creatives</h3>
+          <p class="text-gray-500 text-sm mb-4">Google Display and Meta ad creatives in all standard sizes — compliant with DHA advertising guidelines.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;padding:1.75rem">
+          <i class="fas fa-pen-alt text-3xl mb-3" style="color:var(--purpleColor)"></i>
+          <h3 class="font-bold mb-2" style="font-family:'Outfit',sans-serif">Email Templates</h3>
+          <p class="text-gray-500 text-sm mb-4">Professionally designed email marketing templates for patient acquisition and retention campaigns.</p>
+          <button class="btn-outline-purple w-full text-sm" onclick="showPage('provider-portal')"><i class="fas fa-download mr-2"></i>Download (Login)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Webinars -->
+    <div id="res-webinars" class="tab-content">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden">
+          <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:2rem;position:relative">
+            <span style="background:var(--cta-background-color);color:#fff;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;font-weight:700;text-transform:uppercase">On Demand</span>
+            <h3 class="text-white font-bold text-lg mt-3 mb-1" style="font-family:'Outfit',sans-serif">Optimizing PicoWay® Settings for Tattoo Removal</h3>
+            <div style="color:#aaa;font-size:0.82rem">Dr. Sarah Al-Mansoori | 52 min</div>
+            <i class="fas fa-play-circle" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.2)"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <p class="text-gray-500 text-sm mb-4">An in-depth clinical walkthrough of PicoWay® parameter optimization for different tattoo types, ink colors, and skin tones — with live case studies.</p>
+            <button class="btn-primary" onclick="showPage('provider-portal')">Watch Now</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden">
+          <div style="background:linear-gradient(135deg,#1a2a4a,#0a1a3a);padding:2rem;position:relative">
+            <span style="background:#2d9e2d;color:#fff;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;font-weight:700;text-transform:uppercase">On Demand</span>
+            <h3 class="text-white font-bold text-lg mt-3 mb-1" style="font-family:'Outfit',sans-serif">Building a Profitable Hair Removal Practice in the UAE</h3>
+            <div style="color:#aaa;font-size:0.82rem">Business Development Team | 45 min</div>
+            <i class="fas fa-play-circle" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.2)"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <p class="text-gray-500 text-sm mb-4">Practical business strategies for maximizing ROI with laser hair removal, including pricing models, marketing strategies, and patient retention tactics.</p>
+            <button class="btn-primary" onclick="showPage('provider-portal')">Watch Now</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden">
+          <div style="background:linear-gradient(135deg,#2a1a1a,#1a0a0a);padding:2rem;position:relative">
+            <span style="background:#e07800;color:#fff;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;font-weight:700;text-transform:uppercase">On Demand</span>
+            <h3 class="text-white font-bold text-lg mt-3 mb-1" style="font-family:'Outfit',sans-serif">Matrix™ RF Microneedling: Clinical Protocols & Best Practices</h3>
+            <div style="color:#aaa;font-size:0.82rem">Dr. Nadia Hamdan | 60 min</div>
+            <i class="fas fa-play-circle" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.2)"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <p class="text-gray-500 text-sm mb-4">Comprehensive clinical training webinar on Matrix™ protocols for facial rejuvenation, body tightening, and scar treatment.</p>
+            <button class="btn-primary" onclick="showPage('provider-portal')">Watch Now</button>
+          </div>
+        </div>
+        <div style="border:1px solid #eee;border-radius:12px;overflow:hidden">
+          <div style="background:linear-gradient(135deg,#1a3a1a,#0a2a0a);padding:2rem;position:relative">
+            <span style="background:var(--cta-background-color);color:#fff;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:3px;font-weight:700;text-transform:uppercase">Upcoming — Apr 22</span>
+            <h3 class="text-white font-bold text-lg mt-3 mb-1" style="font-family:'Outfit',sans-serif">Maximizing Revenue with Multi-Device Aesthetic Menus</h3>
+            <div style="color:#aaa;font-size:0.82rem">PicoTech Business Team | 45 min</div>
+            <i class="fas fa-calendar-alt" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.2)"></i>
+          </div>
+          <div style="padding:1.5rem">
+            <p class="text-gray-500 text-sm mb-4">Learn how to build comprehensive treatment menus using multiple PicoTech devices to maximize patient lifetime value and clinic profitability.</p>
+            <button class="btn-primary" onclick="showPage('contact')">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TRAINING PAGE ===== -->
+<div id="page-training" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Training</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">PicoTech Institute of Excellence</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Training & Education</h1>
+      <p class="text-gray-300">World-class clinical education programs to elevate your skills and accelerate your practice growth.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Training programs -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-16">
+      <div style="background:var(--darkColor);border-radius:16px;overflow:hidden;color:#fff">
+        <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));padding:2rem;text-align:center">
+          <i class="fas fa-graduation-cap text-white" style="font-size:3rem"></i>
+          <h3 class="font-black text-xl mt-3" style="font-family:'Outfit',sans-serif">Foundation Certificate</h3>
+        </div>
+        <div style="padding:2rem">
+          <p style="color:#ccc;font-size:0.9rem;line-height:1.7;margin-bottom:1.5rem">Ideal for practitioners new to energy-based devices. Covers laser safety, skin anatomy, and fundamental treatment protocols.</p>
+          <ul style="color:#aaa;font-size:0.85rem;space-y:0.5rem">
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>2-day intensive program</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Hands-on device training</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Certification issued</li>
+            <li style="padding:0.4rem 0"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Ongoing support included</li>
+          </ul>
+          <button class="btn-primary w-full mt-5" onclick="showPage('contact')">Enroll Now</button>
+        </div>
+      </div>
+      <div style="background:var(--darkColor);border-radius:16px;overflow:hidden;color:#fff;border:2px solid var(--cta-background-color)">
+        <div style="background:linear-gradient(135deg,var(--purpleColor),var(--cta-background-color));padding:2rem;text-align:center">
+          <div style="background:rgba(255,255,255,0.2);border-radius:20px;display:inline-block;padding:0.3rem 0.8rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;margin-bottom:0.5rem">MOST POPULAR</div>
+          <i class="fas fa-award text-white" style="font-size:3rem"></i>
+          <h3 class="font-black text-xl mt-3" style="font-family:'Outfit',sans-serif">Advanced Clinical</h3>
+        </div>
+        <div style="padding:2rem">
+          <p style="color:#ccc;font-size:0.9rem;line-height:1.7;margin-bottom:1.5rem">For experienced practitioners seeking to expand treatment capabilities and master advanced protocols for complex cases.</p>
+          <ul style="color:#aaa;font-size:0.85rem">
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>3-day masterclass</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Live patient demonstrations</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Case study workshops</li>
+            <li style="padding:0.4rem 0"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Expert faculty mentoring</li>
+          </ul>
+          <button class="btn-primary w-full mt-5" onclick="showPage('contact')">Enroll Now</button>
+        </div>
+      </div>
+      <div style="background:var(--darkColor);border-radius:16px;overflow:hidden;color:#fff">
+        <div style="background:linear-gradient(135deg,#1a4a8a,#0a2a6a);padding:2rem;text-align:center">
+          <i class="fas fa-user-md text-white" style="font-size:3rem"></i>
+          <h3 class="font-black text-xl mt-3" style="font-family:'Outfit',sans-serif">KOL Mentorship</h3>
+        </div>
+        <div style="padding:2rem">
+          <p style="color:#ccc;font-size:0.9rem;line-height:1.7;margin-bottom:1.5rem">Exclusive one-on-one mentorship with PicoTech's clinical advisory board members — for top-tier practitioners.</p>
+          <ul style="color:#aaa;font-size:0.85rem">
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Personalized 1:1 program</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>At your clinic or ours</li>
+            <li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.1)"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Practice business coaching</li>
+            <li style="padding:0.4rem 0"><i class="fas fa-check mr-2" style="color:var(--cta-background-color)"></i>Ongoing KOL relationship</li>
+          </ul>
+          <button class="btn-primary w-full mt-5" onclick="showPage('contact')">Apply Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-3xl mx-auto">
+      <h2 class="section-title text-3xl text-center mb-10">Frequently Asked Questions</h2>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)">Who can attend PicoTech training programs? <i class="fas fa-plus text-sm" style="color:var(--purpleColor)"></i></div><div class="accordion-body">Training programs are open to licensed medical professionals including dermatologists, plastic surgeons, aesthetic physicians, and registered nurses working under physician supervision. All attendees must provide proof of medical licensing.</div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)">Are the programs available in Arabic? <i class="fas fa-plus text-sm" style="color:var(--purpleColor)"></i></div><div class="accordion-body">Yes! PicoTech offers training programs in both English and Arabic. Our UAE-based clinical trainers are bilingual, and all printed course materials are available in both languages.</div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)">Where are training sessions held? <i class="fas fa-plus text-sm" style="color:var(--purpleColor)"></i></div><div class="accordion-body">Primary training sessions are held at our Dubai Healthcare City training center. We also offer on-site training at your clinic and regional workshops across the UAE, Saudi Arabia, and the wider GCC region.</div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)">Do I receive a certificate upon completion? <i class="fas fa-plus text-sm" style="color:var(--purpleColor)"></i></div><div class="accordion-body">Yes. All program graduates receive a PicoTech Institute of Excellence certificate of completion, which is recognized by healthcare authorities in the UAE and GCC. Certificates are a prerequisite for applying to our Provider Directory.</div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)">Is training included when I purchase a device? <i class="fas fa-plus text-sm" style="color:var(--purpleColor)"></i></div><div class="accordion-body">Foundation-level clinical training and device setup training are included with every device purchase. Advanced programs and specialized workshops may be offered at a subsidized rate for PicoTech device owners.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== EVENTS PAGE ===== -->
+<div id="page-events" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Events</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Events & Tradeshows</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Upcoming Events</h1>
+      <p class="text-gray-300">Meet PicoTech at tradeshows, workshops, and conferences across the UAE and Middle East region.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Event 1 -->
+      <div style="border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06)">
+        <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));padding:2rem;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="color:rgba(255,255,255,0.7);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">April 2026</div><h3 class="text-white font-black text-2xl mt-1" style="font-family:'Outfit',sans-serif">Advanced Laser Workshop</h3></div>
+          <div style="background:rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-align:center;min-width:60px"><div style="color:#fff;font-size:2rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">15</div><div style="color:rgba(255,255,255,0.7);font-size:0.65rem;text-transform:uppercase">Apr</div></div>
+        </div>
+        <div style="padding:2rem">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2"><i class="fas fa-map-marker-alt" style="color:var(--purpleColor)"></i>Dubai Healthcare City, Building 64</div>
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-4"><i class="fas fa-clock" style="color:var(--purpleColor)"></i>9:00 AM – 5:00 PM GST</div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Hands-on clinical training workshop with live patient demonstrations. Covering GentlePro™ laser hair removal and PicoWay® tattoo removal protocols. Limited seats available.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Hands-On Training</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">CME Credits</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Certification</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Register Now →</button>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div style="border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06)">
+        <div style="background:linear-gradient(135deg,#1a2a4a,#0a1a3a);padding:2rem;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="color:rgba(255,255,255,0.7);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">April 2026</div><h3 class="text-white font-black text-2xl mt-1" style="font-family:'Outfit',sans-serif">Business Growth Webinar</h3></div>
+          <div style="background:rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-align:center;min-width:60px"><div style="color:#fff;font-size:2rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">22</div><div style="color:rgba(255,255,255,0.7);font-size:0.65rem;text-transform:uppercase">Apr</div></div>
+        </div>
+        <div style="padding:2rem">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2"><i class="fas fa-laptop" style="color:var(--purpleColor)"></i>Online – Zoom Live Stream</div>
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-4"><i class="fas fa-clock" style="color:var(--purpleColor)"></i>7:00 PM – 8:30 PM GST</div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Strategic webinar on maximizing ROI from your energy-based devices. Topics include pricing strategies, digital marketing, and patient retention programs for UAE aesthetic practices.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Free to Attend</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Business Strategy</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Register Free →</button>
+        </div>
+      </div>
+
+      <!-- AMWC -->
+      <div style="border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06)">
+        <div style="background:linear-gradient(135deg,#1a4a1a,#0a2a0a);padding:2rem;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="color:rgba(255,255,255,0.7);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">May 2026</div><h3 class="text-white font-black text-2xl mt-1" style="font-family:'Outfit',sans-serif">AMWC Middle East</h3></div>
+          <div style="background:rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-align:center;min-width:60px"><div style="color:#fff;font-size:2rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">10</div><div style="color:rgba(255,255,255,0.7);font-size:0.65rem;text-transform:uppercase">May</div></div>
+        </div>
+        <div style="padding:2rem">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2"><i class="fas fa-map-marker-alt" style="color:var(--purpleColor)"></i>Madinat Jumeirah, Dubai</div>
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-4"><i class="fas fa-clock" style="color:var(--purpleColor)"></i>May 10–12, 2026</div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Visit PicoTech at Booth #A12 at AMWC Middle East 2026 — the region's premier aesthetic medicine congress. Live device demonstrations, symposium sessions, and exclusive show pricing.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Tradeshow</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Live Demos</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Booth #A12</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Plan Your Visit →</button>
+        </div>
+      </div>
+
+      <!-- DDF -->
+      <div style="border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06)">
+        <div style="background:linear-gradient(135deg,#4a1a1a,#2a0a0a);padding:2rem;display:flex;justify-content:space-between;align-items:center">
+          <div><div style="color:rgba(255,255,255,0.7);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">June 2026</div><h3 class="text-white font-black text-2xl mt-1" style="font-family:'Outfit',sans-serif">Dubai Dermatology Forum</h3></div>
+          <div style="background:rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-align:center;min-width:60px"><div style="color:#fff;font-size:2rem;font-weight:900;font-family:'Outfit',sans-serif;line-height:1">18</div><div style="color:rgba(255,255,255,0.7);font-size:0.65rem;text-transform:uppercase">Jun</div></div>
+        </div>
+        <div style="padding:2rem">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2"><i class="fas fa-map-marker-alt" style="color:var(--purpleColor)"></i>Dubai World Trade Centre</div>
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-4"><i class="fas fa-clock" style="color:var(--purpleColor)"></i>June 18–19, 2026</div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">PicoTech presents at the Dubai Dermatology Forum with a focus on vascular treatments and skin of color. Clinical symposium sessions with leading UAE dermatologists.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Conference</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">Symposium</span>
+            <span style="background:#f3f3f3;color:#666;font-size:0.7rem;padding:0.25rem 0.65rem;border-radius:3px">CME Credits</span>
+          </div>
+          <button class="btn-primary w-full" onclick="showPage('contact')">Learn More →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPANY PAGE ===== -->
+<div id="page-company" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">About PicoTech</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:6rem 0">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="section-tag">Our Story</span>
+        <h1 class="text-5xl font-black text-white mt-3 mb-5" style="font-family:'Outfit',sans-serif">Elevating Aesthetic Medicine in the UAE</h1>
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">PicoTech was founded with a singular mission: to bring the world's most advanced medical aesthetic technology to practitioners and patients across the UAE and Middle East.</p>
+        <div class="flex gap-6">
+          <div><div class="text-4xl font-black text-white" style="font-family:'Outfit',sans-serif">10+</div><div class="text-gray-400 text-sm">Years in the UAE</div></div>
+          <div><div class="text-4xl font-black text-white" style="font-family:'Outfit',sans-serif">62</div><div class="text-gray-400 text-sm">Certified Providers</div></div>
+          <div><div class="text-4xl font-black text-white" style="font-family:'Outfit',sans-serif">6</div><div class="text-gray-400 text-sm">Device Platforms</div></div>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:2.5rem">
+        <h3 class="text-white font-bold text-xl mb-5" style="font-family:'Outfit',sans-serif">Our Core Values</h3>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4"><div style="width:40px;height:40px;background:rgba(165,24,144,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-microscope" style="color:var(--cta-background-color)"></i></div><div><div class="text-white font-bold mb-1">Science</div><div style="color:#aaa;font-size:0.85rem">Every device and protocol is grounded in peer-reviewed clinical evidence.</div></div></div>
+          <div class="flex items-start gap-4"><div style="width:40px;height:40px;background:rgba(165,24,144,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-star" style="color:var(--cta-background-color)"></i></div><div><div class="text-white font-bold mb-1">Results</div><div style="color:#aaa;font-size:0.85rem">We are committed to delivering measurable, visible outcomes for every patient.</div></div></div>
+          <div class="flex items-start gap-4"><div style="width:40px;height:40px;background:rgba(165,24,144,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-handshake" style="color:var(--cta-background-color)"></i></div><div><div class="text-white font-bold mb-1">Trust</div><div style="color:#aaa;font-size:0.85rem">Built on long-term partnerships with the healthcare community across the region.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Clinical Advisory Board -->
+    <div class="mb-20">
+      <div class="text-center mb-12">
+        <span class="section-tag">Expertise You Can Trust</span>
+        <h2 class="section-title text-4xl mt-3 mb-4">Clinical Advisory Board</h2>
+        <div class="purple-line mx-auto mt-4"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div style="text-align:center;padding:2rem;border:1px solid #eee;border-radius:12px">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem"><i class="fas fa-user-md text-white text-2xl"></i></div>
+          <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Prof. Khaled Al-Ayoubi</h4>
+          <p style="color:var(--purpleColor);font-size:0.78rem;margin-top:0.25rem">Dermatology, Dubai</p>
+          <p style="color:#888;font-size:0.78rem;margin-top:0.5rem">25 years clinical experience. Former HOD Dermatology, Dubai Hospital.</p>
+        </div>
+        <div style="text-align:center;padding:2rem;border:1px solid #eee;border-radius:12px">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem"><i class="fas fa-user-md text-white text-2xl"></i></div>
+          <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Dr. Rima Al-Khamis</h4>
+          <p style="color:var(--purpleColor);font-size:0.78rem;margin-top:0.25rem">Plastic Surgery, Abu Dhabi</p>
+          <p style="color:#888;font-size:0.78rem;margin-top:0.5rem">Specialist in body contouring and laser aesthetics across the GCC.</p>
+        </div>
+        <div style="text-align:center;padding:2rem;border:1px solid #eee;border-radius:12px">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem"><i class="fas fa-user-md text-white text-2xl"></i></div>
+          <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Dr. Omar Hasbani</h4>
+          <p style="color:var(--purpleColor);font-size:0.78rem;margin-top:0.25rem">Aesthetic Medicine, Sharjah</p>
+          <p style="color:#888;font-size:0.78rem;margin-top:0.5rem">Pioneer in laser treatment for Middle Eastern skin types, published researcher.</p>
+        </div>
+        <div style="text-align:center;padding:2rem;border:1px solid #eee;border-radius:12px">
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem"><i class="fas fa-user-md text-white text-2xl"></i></div>
+          <h4 class="font-bold" style="font-family:'Outfit',sans-serif">Dr. Aisha Bin Sultan</h4>
+          <p style="color:var(--purpleColor);font-size:0.78rem;margin-top:0.25rem">Cosmetic Dermatology, Dubai</p>
+          <p style="color:#888;font-size:0.78rem;margin-top:0.5rem">Expert in pigmentation treatment and skin of color management.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Careers teaser -->
+    <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));border-radius:20px;padding:3rem;text-align:center">
+      <h2 class="text-3xl font-black text-white mb-3" style="font-family:'Outfit',sans-serif">Join the PicoTech Team</h2>
+      <p class="text-gray-300 mb-6 max-w-xl mx-auto">We're growing. We're looking for passionate professionals in clinical training, sales, and engineering across the UAE.</p>
+      <button class="btn-primary" onclick="showPage('contact')">View Open Positions</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROVIDER PORTAL PAGE ===== -->
+<div id="page-provider-portal" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Provider Portal</span></div></div>
+
+  <div style="background:var(--darkColor);min-height:90vh;display:flex;align-items:center;padding:5rem 0">
+    <div class="max-w-md mx-auto px-4 w-full">
+      <div style="background:#fff;border-radius:16px;padding:2.5rem;box-shadow:0 30px 80px rgba(0,0,0,0.4)">
+        <div style="text-align:center;margin-bottom:2rem">
+          <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem"><i class="fas fa-user-circle text-white text-2xl"></i></div>
+          <h2 class="text-2xl font-black" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Provider Portal</h2>
+          <p style="color:#888;font-size:0.85rem;margin-top:0.5rem">Access your clinical resources and account</p>
+        </div>
+        <div style="margin-bottom:1.25rem">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="your@clinic.ae">
+        </div>
+        <div style="margin-bottom:1.75rem">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-input" placeholder="••••••••">
+        </div>
+        <button class="btn-primary w-full text-center" style="width:100%;text-align:center">Sign In to Portal</button>
+        <div style="text-align:center;margin-top:1.25rem">
+          <span style="color:var(--purpleColor);font-size:0.85rem;cursor:pointer;font-weight:600">Forgot password?</span>
+        </div>
+        <div style="border-top:1px solid #eee;margin-top:1.75rem;padding-top:1.75rem;text-align:center">
+          <p style="color:#888;font-size:0.85rem">Not registered? <span style="color:var(--purpleColor);cursor:pointer;font-weight:600" onclick="showPage('contact')">Apply for Provider Access →</span></p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:1.5rem">
+        <p style="color:#888;font-size:0.78rem">Secure access for PicoTech certified partners only</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="page-contact" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Contact</span></div></div>
+
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Get in Touch</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Contact PicoTech</h1>
+      <p class="text-gray-300">We'd love to hear from you. Whether you're a medical provider interested in our technology or a patient seeking treatment information.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-16">
+      <!-- Contact Form -->
+      <div>
+        <h2 class="section-title text-3xl mb-6">Send Us a Message</h2>
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div><label class="form-label">First Name *</label><input type="text" class="form-input" placeholder="Dr. Sarah"></div>
+          <div><label class="form-label">Last Name *</label><input type="text" class="form-input" placeholder="Al-Rashidi"></div>
+        </div>
+        <div class="mb-4"><label class="form-label">Email Address *</label><input type="email" class="form-input" placeholder="sarah@clinic.ae"></div>
+        <div class="mb-4"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+971 50 XXX XXXX"></div>
+        <div class="mb-4"><label class="form-label">Clinic / Organization</label><input type="text" class="form-input" placeholder="Dubai Skin Clinic"></div>
+        <div class="mb-4">
+          <label class="form-label">Enquiry Type *</label>
+          <select class="form-input">
+            <option value="">Select...</option>
+            <option>Product Demo Request</option>
+            <option>Training Enquiry</option>
+            <option>Technical Support</option>
+            <option>Provider Partnership</option>
+            <option>General Enquiry</option>
+            <option>Find a Provider (Patient)</option>
+          </select>
+        </div>
+        <div class="mb-6"><label class="form-label">Message</label><textarea class="form-input" rows="5" placeholder="Tell us about your practice and how we can help..."></textarea></div>
+        <button class="btn-primary" style="width:100%;text-align:center" onclick="submitForm()">Send Message →</button>
+        <p style="color:#aaa;font-size:0.75rem;margin-top:1rem">By submitting this form, you agree to our Privacy Policy. We will respond within 1 business day.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="section-title text-3xl mb-6">Our UAE Office</h2>
+
+        <div class="space-y-5 mb-10">
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-map-marker-alt text-white text-sm"></i></div>
+            <div><div class="font-bold" style="font-family:'Outfit',sans-serif">Address</div><p style="color:#666;margin-top:0.25rem;font-size:0.9rem">Dubai Healthcare City<br/>Building 64, Unit 201<br/>Dubai, UAE</p></div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-phone text-white text-sm"></i></div>
+            <div><div class="font-bold" style="font-family:'Outfit',sans-serif">Phone</div><a href="tel:0507480783" style="color:var(--purpleColor);font-size:0.9rem;font-weight:600">+971 50 748 0783</a></div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-envelope text-white text-sm"></i></div>
+            <div><div class="font-bold" style="font-family:'Outfit',sans-serif">Email</div><a href="mailto:newcity7555@gmail.com" style="color:var(--purpleColor);font-size:0.9rem;font-weight:600">newcity7555@gmail.com</a></div>
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-clock text-white text-sm"></i></div>
+            <div><div class="font-bold" style="font-family:'Outfit',sans-serif">Business Hours</div><p style="color:#666;font-size:0.9rem;margin-top:0.25rem">Monday – Friday: 9:00 AM – 6:00 PM GST<br/>Saturday: 10:00 AM – 2:00 PM GST</p></div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));border-radius:12px;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:1.5rem">
+          <i class="fas fa-map" style="font-size:3rem;color:var(--cta-background-color);opacity:0.6"></i>
+          <div style="color:#aaa;margin-top:0.75rem;font-size:0.85rem">Dubai Healthcare City</div>
+          <div style="color:#666;font-size:0.75rem">Interactive map loading...</div>
+        </div>
+
+        <!-- Social links -->
+        <div>
+          <div class="font-bold mb-3" style="font-family:'Outfit',sans-serif">Follow PicoTech</div>
+          <div class="flex gap-3">
+            <a href="#" style="width:40px;height:40px;background:var(--purpleColor);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all 0.3s" class="hover:opacity-80"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" style="width:40px;height:40px;background:var(--purpleColor);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all 0.3s" class="hover:opacity-80"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="width:40px;height:40px;background:var(--purpleColor);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all 0.3s" class="hover:opacity-80"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="width:40px;height:40px;background:var(--purpleColor);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all 0.3s" class="hover:opacity-80"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PRIVACY PAGE ===== -->
+<div id="page-privacy" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Privacy Policy</span></div></div>
+  <div class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-black mb-6" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Privacy Policy</h1>
+    <p style="color:#aaa;font-size:0.85rem;margin-bottom:2rem">Last updated: March 2026 | PicoTech Medical Aesthetic Solutions – Dubai, UAE</p>
+    <div class="space-y-6 text-gray-600 leading-relaxed">
+      <div><h2 class="text-xl font-bold mb-2" style="color:var(--darkColor);font-family:'Outfit',sans-serif">1. Information We Collect</h2><p>PicoTech collects information you provide directly to us, including when you fill out a contact form, register for training, or access the Provider Portal. This includes name, email, phone number, clinic details, and professional licensing information.</p></div>
+      <div><h2 class="text-xl font-bold mb-2" style="color:var(--darkColor);font-family:'Outfit',sans-serif">2. How We Use Your Information</h2><p>We use your information to respond to enquiries, process training registrations, provide access to clinical resources, and improve our services. We do not sell your personal information to third parties.</p></div>
+      <div><h2 class="text-xl font-bold mb-2" style="color:var(--darkColor);font-family:'Outfit',sans-serif">3. Data Protection (UAE)</h2><p>PicoTech operates in full compliance with UAE Federal Law No. 45 of 2021 on Personal Data Protection. Your data is stored securely and processed lawfully. You have the right to access, correct, and request deletion of your personal data.</p></div>
+      <div><h2 class="text-xl font-bold mb-2" style="color:var(--darkColor);font-family:'Outfit',sans-serif">4. Cookies</h2><p>We use essential cookies to ensure basic website functionality and analytics cookies to understand how visitors interact with our site. You can manage cookie preferences via our cookie consent manager.</p></div>
+      <div><h2 class="text-xl font-bold mb-2" style="color:var(--darkColor);font-family:'Outfit',sans-serif">5. Contact</h2><p>For privacy enquiries, contact us at: <a href="mailto:newcity7555@gmail.com" style="color:var(--purpleColor);font-weight:600">newcity7555@gmail.com</a> or call <a href="tel:0507480783" style="color:var(--purpleColor);font-weight:600">+971 50 748 0783</a></p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#0f1014;color:#aaa;padding:4rem 0 2rem">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4 cursor-pointer" onclick="showPage('home')">
+          <div style="background:linear-gradient(135deg,var(--purpleColor),var(--darkpurpleColor));width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-atom text-white text-sm"></i></div>
+          <span style="font-family:'Outfit',sans-serif;font-weight:900;font-size:1.5rem;color:#fff">Pico<span style="color:var(--cta-background-color)">Tech</span></span>
+        </div>
+        <p style="font-size:0.85rem;line-height:1.7;margin-bottom:1.5rem">PicoTech delivers cutting-edge medical aesthetic technology to clinics and practitioners across the UAE and Middle East. Dubai Healthcare City based. DHA Licensed.</p>
+        <div class="flex gap-3">
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:#aaa" class="hover:bg-purple-600 hover:text-white"><i class="fab fa-linkedin-in text-xs"></i></a>
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:#aaa" class="hover:bg-pink-600 hover:text-white"><i class="fab fa-instagram text-xs"></i></a>
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:#aaa" class="hover:bg-blue-700 hover:text-white"><i class="fab fa-facebook-f text-xs"></i></a>
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:#aaa" class="hover:bg-red-600 hover:text-white"><i class="fab fa-youtube text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem">Products</h4>
+        <ul class="space-y-2">
+          <li><span class="footer-link" onclick="showPage('products')">GentlePro™</span></li>
+          <li><span class="footer-link" onclick="showPage('products')">PicoWay®</span></li>
+          <li><span class="footer-link" onclick="showPage('products')">Nordlys™</span></li>
+          <li><span class="footer-link" onclick="showPage('products')">Matrix™</span></li>
+          <li><span class="footer-link" onclick="showPage('products')">Vbeam®</span></li>
+          <li><span class="footer-link" onclick="showPage('products')">Glacē™</span></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h4 style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem">Resources</h4>
+        <ul class="space-y-2">
+          <li><span class="footer-link" onclick="showPage('resources')">Clinical Library</span></li>
+          <li><span class="footer-link" onclick="showPage('resources')">Marketing Center</span></li>
+          <li><span class="footer-link" onclick="showPage('resources')">Webinars</span></li>
+          <li><span class="footer-link" onclick="showPage('training')">Training</span></li>
+          <li><span class="footer-link" onclick="showPage('events')">Events</span></li>
+          <li><span class="footer-link" onclick="showPage('provider-portal')">Provider Portal</span></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem">Contact UAE</h4>
+        <ul class="space-y-3">
+          <li style="display:flex;gap:0.75rem;font-size:0.85rem"><i class="fas fa-map-marker-alt mt-0.5" style="color:var(--cta-background-color);flex-shrink:0"></i><span>Dubai Healthcare City, Building 64, Dubai, UAE</span></li>
+          <li style="display:flex;gap:0.75rem;font-size:0.85rem"><i class="fas fa-phone mt-0.5" style="color:var(--cta-background-color);flex-shrink:0"></i><a href="tel:0507480783" style="color:#aaa;transition:color 0.3s" class="hover:text-white">+971 50 748 0783</a></li>
+          <li style="display:flex;gap:0.75rem;font-size:0.85rem"><i class="fas fa-envelope mt-0.5" style="color:var(--cta-background-color);flex-shrink:0"></i><a href="mailto:newcity7555@gmail.com" style="color:#aaa;transition:color 0.3s" class="hover:text-white">newcity7555@gmail.com</a></li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <span style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.06);border-radius:6px;padding:0.4rem 0.8rem;font-size:0.75rem">🇦🇪 UAE Based · DHA Licensed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem">
+      <p style="font-size:0.78rem">© 2026 PicoTech Medical Aesthetic Solutions. All rights reserved. Dubai, UAE.</p>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+        <span class="footer-link" style="font-size:0.78rem" onclick="showPage('privacy')">Privacy Policy</span>
+        <span class="footer-link" style="font-size:0.78rem" onclick="showPage('privacy')">Terms of Use</span>
+        <span class="footer-link" style="font-size:0.78rem" onclick="showPage('privacy')">Cookie Policy</span>
+        <span class="footer-link" style="font-size:0.78rem">Sitemap</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/971507480783" target="_blank" style="position:fixed;bottom:2rem;right:2rem;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 6px 20px rgba(37,211,102,0.4);z-index:9997;transition:all 0.3s" class="hover:scale-110">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to top -->
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:2rem;right:5.5rem;background:var(--purpleColor);color:#fff;width:44px;height:44px;border-radius:50%;display:none;align-items:center;justify-content:center;z-index:9997;border:none;cursor:pointer;box-shadow:0 4px 15px rgba(154,31,143,0.4)">
+  <i class="fas fa-chevron-up text-sm"></i>
+</button>
+
+<!-- Toast notification -->
+<div id="toast" style="position:fixed;top:6rem;right:2rem;background:var(--darkColor);color:#fff;padding:1rem 1.5rem;border-radius:8px;border-left:4px solid var(--cta-background-color);z-index:9999;transform:translateX(200%);transition:transform 0.4s;max-width:300px;font-size:0.85rem">
+  <div style="font-weight:700;margin-bottom:0.25rem">Message Sent!</div>
+  <div style="color:#aaa">We'll be in touch within 1 business day.</div>
+</div>
+
+<script>
+  // Page routing
+  function showPage(id) {
+    document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+    const target = document.getElementById('page-' + id);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    // Close mobile menu
+    document.getElementById('mobile-menu').classList.remove('open');
+  }
+
+  // Mobile menu
+  function toggleMobile() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  // Product filter
+  function filterProducts(cat, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#products-grid .product-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Tab switching
+  function switchTab(prefix, id, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.getElementById(prefix + '-' + id).classList.add('active');
+  }
+
+  // Accordion
+  function toggleAccordion(header) {
+    const body = header.nextElementSibling;
+    const icon = header.querySelector('i');
+    body.classList.toggle('open');
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  function initReveal() {
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  }
+
+  // Cookie banner
+  setTimeout(() => {
+    document.getElementById('cookie-banner').classList.add('show');
+  }, 2000);
+
+  function closeCookie() {
+    document.getElementById('cookie-banner').classList.remove('show');
+  }
+
+  // Page loader
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('page-loader').classList.add('hide');
+      initReveal();
+    }, 1800);
+  });
+
+  // Back to top
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('back-to-top');
+    btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+  });
+
+  // Form submit
+  function submitForm() {
+    const toast = document.getElementById('toast');
+    toast.style.transform = 'translateX(0)';
+    setTimeout(() => { toast.style.transform = 'translateX(200%)'; }, 4000);
+  }
+
+  // Init
+  initReveal();
+</script>
+
+</body>
+</html>
