@@ -27,7 +27,7 @@
     /* Navigation */
     .main-nav { background: var(--darkColor); position: sticky; top: 0; z-index: 1000; }
     .nav-logo span { color: var(--cta-background-color); }
-    .nav-link { color: #ccc; transition: color 0.3s; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; padding: 0.5rem 0.75rem; border-radius: 4px; }
+    .nav-link { color: #ccc; transition: color 0.3s; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; padding: 0.4rem 0.6rem; border-radius: 4px; white-space: nowrap; }
     .nav-link:hover { color: #fff; background: rgba(165,24,144,0.15); }
     .nav-link.active { color: var(--cta-background-color); }
 
@@ -214,18 +214,16 @@
       </div>
     </div>
   </div>
-</div>
-
 <!-- Main Navigation -->
 <nav class="main-nav shadow-2xl">
-  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+  <div class="max-w-[1440px] mx-auto px-4 lg:px-8 flex items-center h-16 w-full gap-4 lg:gap-8">
     <!-- Logo -->
-    <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home')">
+    <div class="flex items-center gap-3 cursor-pointer flex-shrink-0" onclick="showPage('home')">
       <img src="assets/images/logo.png" alt="PicoTech Logo" style="height:55px;width:auto;border-radius:8px;">
     </div>
 
     <!-- Desktop Nav -->
-    <div class="hidden lg:flex items-center gap-1">
+    <div class="hidden lg:flex items-center gap-0.5 xl:gap-2 flex-shrink-0">
       <div class="dropdown">
         <span class="nav-link" onclick="showPage('products')">Products <i class="fas fa-chevron-down text-xs ml-1"></i></span>
         <div class="dropdown-menu">
@@ -250,7 +248,7 @@
         <span class="nav-link" onclick="showPage('resources')">Resources <i class="fas fa-chevron-down text-xs ml-1"></i></span>
         <div class="dropdown-menu">
           <span class="dropdown-item" onclick="showPage('resources')">Clinical Library</span>
-          <span class="dropdown-item" onclick="showPage('resources')">Marketing Center</span>
+          <span class="dropdown-item" onclick="showPage('resources')">Marketing Toolkit</span>
           <span class="dropdown-item" onclick="showPage('resources')">Webinars</span>
           <span class="dropdown-item" onclick="showPage('training')">Training & Education</span>
         </div>
@@ -265,17 +263,19 @@
           <span class="dropdown-item" onclick="showPage('company')">News & Press</span>
         </div>
       </div>
+      <span class="nav-link" onclick="showPage('media')">Media</span>
+      <span class="nav-link" onclick="showPage('catalogue')">Catalogue</span>
       <span class="nav-link" onclick="showPage('contact')">Contact</span>
     </div>
 
     <!-- CTA Buttons -->
-    <div class="hidden lg:flex items-center gap-3">
-      <button class="btn-outline-purple" onclick="showPage('provider-portal')" style="padding:0.5rem 1.25rem;font-size:0.78rem">Provider Login</button>
-      <button class="btn-primary" onclick="showPage('contact')" style="padding:0.55rem 1.25rem;font-size:0.78rem">Get a Demo</button>
+    <div class="hidden lg:flex items-center gap-2 flex-shrink-0">
+      <button class="btn-outline-purple" onclick="showPage('provider-portal')" style="padding:0.35rem 0.8rem;font-size:0.75rem">Provider Login</button>
+      <button class="btn-primary" onclick="showPage('contact')" style="padding:0.4rem 0.8rem;font-size:0.75rem">Get a Demo</button>
     </div>
 
     <!-- Hamburger -->
-    <button id="hamburger" class="lg:hidden text-white text-xl p-2" onclick="toggleMobile()">
+    <button id="hamburger" class="lg:hidden text-white text-xl p-2 ml-auto" onclick="toggleMobile()">
       <i class="fas fa-bars"></i>
     </button>
   </div>
@@ -289,6 +289,8 @@
     <span class="mobile-nav-item" onclick="showPage('training');toggleMobile()">Training</span>
     <span class="mobile-nav-item" onclick="showPage('events');toggleMobile()">Events</span>
     <span class="mobile-nav-item" onclick="showPage('company');toggleMobile()">Company</span>
+    <span class="mobile-nav-item" onclick="showPage('media');toggleMobile()">Media</span>
+    <span class="mobile-nav-item" onclick="showPage('catalogue');toggleMobile()">Catalogue</span>
     <span class="mobile-nav-item" onclick="showPage('contact');toggleMobile()">Contact</span>
     <div class="mt-3 flex gap-2 px-3">
       <button class="btn-outline-purple flex-1 text-center" onclick="showPage('provider-portal');toggleMobile()">Provider Login</button>
@@ -1477,6 +1479,101 @@
   </div>
 </div>
 
+<!-- ===== MEDIA PAGE ===== -->
+<div id="page-media" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Media</span></div></div>
+  <div style="background:linear-gradient(135deg,var(--darkColor),var(--darkpurpleColor));padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Visual Assets</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Media Center</h1>
+      <p class="text-gray-300">Explore our product galleries and clinical demonstration videos showcasing the power of PicoTech technology.</p>
+    </div>
+  </div>
+  
+  <div class="max-w-7xl mx-auto px-4 py-20 pb-10">
+    <div class="text-center mb-12">
+      <h2 class="section-title text-4xl">Product Gallery</h2>
+      <div class="purple-line mx-auto mt-4"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,0.05);cursor:pointer;transition:transform 0.4s" class="hover:scale-105" onclick="openLightbox('assets/products/image0.jpeg')">
+        <img src="assets/products/image0.jpeg" alt="Pico Laser System" style="width:100%;height:350px;object-fit:cover;">
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,0.05);cursor:pointer;transition:transform 0.4s" class="hover:scale-105" onclick="openLightbox('assets/products/image1.jpeg')">
+        <img src="assets/products/image1.jpeg" alt="Pico Laser System Detail" style="width:100%;height:350px;object-fit:cover;object-position:top">
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,0.05);cursor:pointer;transition:transform 0.4s" class="hover:scale-105" onclick="openLightbox('assets/products/image2.jpeg')">
+        <img src="assets/products/image2.jpeg" alt="Pico Laser Design" style="width:100%;height:350px;object-fit:cover;">
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-10 mb-20">
+    <div class="text-center mb-12">
+      <h2 class="section-title text-4xl">Video Demonstrations</h2>
+      <div class="purple-line mx-auto mt-4"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.1);border:1px solid #eee">
+        <video controls playsinline style="width:100%;display:block;background:#000" poster="assets/products/image0.jpeg">
+          <source src="assets/products/video0.mp4" type="video/mp4">
+        </video>
+        <div class="p-5 bg-white">
+          <h3 class="font-bold text-lg mb-1" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Product Overview</h3>
+          <p class="text-gray-500 text-sm">Comprehensive look at the Pico Laser features and technical design.</p>
+        </div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.1);border:1px solid #eee">
+        <video controls playsinline style="width:100%;display:block;background:#000" poster="assets/products/image2.jpeg">
+          <source src="assets/products/video1.mp4" type="video/mp4">
+        </video>
+        <div class="p-5 bg-white">
+          <h3 class="font-bold text-lg mb-1" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Clinical Application Focus</h3>
+          <p class="text-gray-500 text-sm">Capabilities and treatment effectiveness of the PicoTech systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CATALOGUE PAGE ===== -->
+<div id="page-catalogue" class="page-section">
+  <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">Catalogue</span></div></div>
+  <div style="background:linear-gradient(135deg,var(--darkColor),#1a0618);padding:5rem 0;text-align:center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="section-tag">Product Literature</span>
+      <h1 class="text-5xl font-black text-white mt-3 mb-4" style="font-family:'Outfit',sans-serif">Download Catalogues</h1>
+      <p class="text-gray-300">Explore comprehensive details on our systems, clinical outcomes, and aesthetic solutions.</p>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+      <div style="background:#fff;border-radius:16px;border:1px solid #eee;overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,0.05);transition:transform 0.3s;cursor:pointer" class="hover:-translate-y-2 hover:shadow-2xl" onclick="window.open('assets/catalogue/pdf0.pdf', '_blank')">
+        <div style="height:220px;background:url('assets/products/image0.jpeg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(100,20,90,0.6))"></div>
+          <div style="position:relative;z-index:2;width:70px;height:70px;background:rgba(255,255,255,0.2);backdrop-filter:blur(8px);border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.4)"><i class="fas fa-file-pdf text-3xl text-white"></i></div>
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-xl mb-2" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Pico Laser Brochure</h3>
+          <p class="text-gray-500 text-sm mb-6">Complete specifications and clinical applications for the Pico Laser system.</p>
+          <button class="btn-outline-purple w-full"><i class="fas fa-book-open mr-2"></i>Read / Download</button>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:16px;border:1px solid #eee;overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,0.05);transition:transform 0.3s;cursor:pointer" class="hover:-translate-y-2 hover:shadow-2xl" onclick="window.open('assets/catalogue/pdf1.pdf', '_blank')">
+        <div style="height:220px;background:url('assets/products/image1.jpeg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(100,20,90,0.6))"></div>
+          <div style="position:relative;z-index:2;width:70px;height:70px;background:rgba(255,255,255,0.2);backdrop-filter:blur(8px);border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.4)"><i class="fas fa-file-pdf text-3xl text-white"></i></div>
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-bold text-xl mb-2" style="font-family:'Outfit',sans-serif;color:var(--darkColor)">Aesthetic Solutions Guide</h3>
+          <p class="text-gray-500 text-sm mb-6">An overview of PicoTech platform options for modern medical practices.</p>
+          <button class="btn-outline-purple w-full"><i class="fas fa-book-open mr-2"></i>Read / Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ===== COMPANY PAGE ===== -->
 <div id="page-company" class="page-section">
   <div class="breadcrumb"><div class="max-w-7xl mx-auto px-4 flex items-center gap-2"><span class="breadcrumb-item cursor-pointer" onclick="showPage('home')">Home</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active">About PicoTech</span></div></div>
@@ -1656,7 +1753,11 @@
           <h3 class="font-bold mb-4" style="font-family:'Outfit',sans-serif;color:var(--darkColor);font-size:1.1rem"><i class="fas fa-globe-americas mr-2" style="color:var(--purpleColor)"></i>Regional Agents</h3>
           
           <div class="mb-4">
-            <div class="text-sm font-bold text-gray-800">Agent in the Middle East & UAE</div>
+            <div class="text-sm font-bold text-gray-800">Agent in the Middle East</div>
+            <div class="text-sm text-gray-600">NewCity for Medical Surgical equipment & instruments Trading LLC</div>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800">Agent in the UAE</div>
             <div class="text-sm text-gray-600">City Pharmacy Company Sole propertiship LLC</div>
           </div>
         </div>
@@ -1753,7 +1854,8 @@
         <div style="margin-top:1.5rem">
           <h4 style="color:#fff;font-family:'Outfit',sans-serif;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem">Regional Agents</h4>
           <ul class="space-y-2">
-            <li style="font-size:0.75rem;color:#aaa;line-height:1.4"><span style="color:#fff;font-weight:600">Middle East & UAE:</span><br>City Pharmacy Company Sole propertiship LLC</li>
+            <li style="font-size:0.75rem;color:#aaa;line-height:1.4"><span style="color:#fff;font-weight:600">Middle East:</span><br>NewCity for Medical Surgical equipment & instruments Trading LLC</li>
+            <li style="font-size:0.75rem;color:#aaa;line-height:1.4"><span style="color:#fff;font-weight:600">UAE:</span><br>City Pharmacy Company Sole propertiship LLC</li>
           </ul>
         </div>
       </div>
