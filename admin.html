@@ -13,12 +13,14 @@
 <!-- LOGIN SCREEN -->
 <div id="login-screen" class="login-screen">
   <div class="login-particles"></div>
+  <div class="login-orb"></div>
+  <div class="login-orb orb2"></div>
   <div class="login-card">
     <div class="login-logo">Pico<span>Tech</span></div>
-    <p class="login-subtitle">Admin Control Panel</p>
+    <p class="login-subtitle">Unified Access Portal</p>
     <div class="login-divider"></div>
     <div id="login-error" class="login-error" style="display:none">
-      <i class="fas fa-exclamation-circle"></i> Invalid credentials
+      <i class="fas fa-exclamation-triangle"></i><span>Invalid credentials</span>
     </div>
     <div class="form-group">
       <label class="form-label"><i class="fas fa-user"></i> Username</label>
@@ -34,6 +36,16 @@
     <button class="login-btn" onclick="attemptLogin()">
       <i class="fas fa-sign-in-alt"></i> Sign In
     </button>
+    
+    <div style="position:relative;margin:1.5rem 0;text-align:center">
+      <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(255,255,255,0.1)"></div>
+      <span style="position:relative;background:rgba(15,17,23,0.9);padding:0 10px;color:#666;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">Or</span>
+    </div>
+
+    <button class="guest-btn" onclick="window.location.href='index.html'">
+      <i class="fas fa-globe"></i> Continue as Guest
+    </button>
+    
     <p class="login-footer">Secured access · PicoTech © 2026</p>
   </div>
 </div>

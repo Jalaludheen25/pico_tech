@@ -1,20 +1,33 @@
-// ═══ ADMIN CREDENTIALS (client-side demo) ═══
+// ═══ CREDENTIALS (client-side demo) ═══
 const ADMIN_USER = 'admin';
 const ADMIN_PASS = 'picotech2026';
 
+const PROVIDER_USER = 'provider';
+const PROVIDER_PASS = 'provider2026';
+
 // ═══ LOGIN ═══
 function attemptLogin() {
-  const user = document.getElementById('login-user').value.trim();
+  const user = document.getElementById('login-user').value.trim().toLowerCase();
   const pass = document.getElementById('login-pass').value;
+  
   if (user === ADMIN_USER && pass === ADMIN_PASS) {
     sessionStorage.setItem('picotech_admin', 'true');
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-panel').style.display = 'flex';
     document.getElementById('login-error').style.display = 'none';
     startClock();
+  } else if (user === PROVIDER_USER && pass === PROVIDER_PASS) {
+    sessionStorage.setItem('picotech_provider', 'true');
+    // redirect to provider portal on main site
+    window.location.href = 'index.html#provider-portal';
   } else {
-    document.getElementById('login-error').style.display = 'block';
+    document.getElementById('login-error').style.display = 'flex';
     document.getElementById('login-pass').value = '';
+    // shake effect
+    const card = document.querySelector('.login-card');
+    card.classList.remove('shake');
+    void card.offsetWidth; // trigger reflow
+    card.classList.add('shake');
   }
 }
 
